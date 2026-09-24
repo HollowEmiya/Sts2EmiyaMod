@@ -118,3 +118,10 @@
 [卫宫士郎 - TYPE-MOON 维基](https://typemoon.wiki.cre.jp/wiki/衛宮士郎?utm_source=chatgpt.com)  
 [Kanshou and Bakuya | TYPE-MOON Wiki | Fandom](https://typemoon.fandom.com/wiki/Kanshou_and_Bakuya)  
 [EMIYA (Archer) | TYPE-MOON Wiki | Fandom](https://typemoon.fandom.com/wiki/EMIYA_(Archer))
+
+## 关于资源
+
+拆完图都碎了，都是粉的，完全都不是正常图片，先不管了。主要是想直接复用动画，不过不太顺利，有时间再看吧。  
+[拆包及spine动画导入教程-百度贴吧](https://tieba.baidu.com/p/7829799993)  
+[囤点王姐(摩根和梣)的解包资料-百度贴吧](https://tieba.baidu.com/p/8693929217)  
+https://atlasacademy.io/

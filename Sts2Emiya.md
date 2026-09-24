@@ -115,4 +115,6 @@
 [卫宫士郎 - 萌娘百科 万物皆可萌的百科全书](https://moegirl.uk/卫宫士郎)  
 [送红a圣骸布的是希耶尔吗？ NGA玩家社区](https://ngabbs.com/read.php?tid=36542449&rand=252)  
 [衛宮士郎 | Fate/stay night | 角色 | AniBase](https://anibase.net/zh-hans/character/mPdN3/衛宮士郎)  
-[卫宫士郎 - TYPE-MOON 维基](https://typemoon.wiki.cre.jp/wiki/衛宮士郎?utm_source=chatgpt.com)
+[卫宫士郎 - TYPE-MOON 维基](https://typemoon.wiki.cre.jp/wiki/衛宮士郎?utm_source=chatgpt.com)  
+[Kanshou and Bakuya | TYPE-MOON Wiki | Fandom](https://typemoon.fandom.com/wiki/Kanshou_and_Bakuya)  
+[EMIYA (Archer) | TYPE-MOON Wiki | Fandom](https://typemoon.fandom.com/wiki/EMIYA_(Archer))

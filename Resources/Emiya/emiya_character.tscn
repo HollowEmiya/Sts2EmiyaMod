@@ -1,0 +1,42 @@
+[gd_scene load_steps=2 format=3 uid="uid://pfdnlinod6uk"]
+
+[ext_resource type="Texture2D" uid="uid://bmatv7t7wqkho" path="res://Sts2EmiyaMod/Images/Emiya/Calibur.png" id="1_t60l0"]
+
+[node name="EmiyaCharacter" type="Node2D"]
+
+[node name="Visuals" type="Node" parent="."]
+unique_name_in_owner = true
+
+[node name="Bounds" type="Control" parent="."]
+unique_name_in_owner = true
+layout_mode = 3
+anchors_preset = 0
+offset_left = -221.0
+offset_top = -569.0
+offset_right = 221.0
+offset_bottom = -50.0
+
+[node name="IntentPos" type="Marker2D" parent="."]
+unique_name_in_owner = true
+
+[node name="CenterPos" type="Marker2D" parent="."]
+unique_name_in_owner = true
+
+[node name="TalkPos" type="Marker2D" parent="."]
+unique_name_in_owner = true
+
+[node name="Control" type="Control" parent="."]
+custom_minimum_size = Vector2(2560, 1200)
+layout_mode = 3
+anchors_preset = 0
+offset_left = -1280.0
+offset_top = -1200.0
+offset_right = 1280.0
+
+[node name="Calibur2" type="Sprite2D" parent="."]
+position = Vector2(-773, -819)
+texture = ExtResource("1_t60l0")
+
+[node name="Calibur3" type="Sprite2D" parent="."]
+position = Vector2(777, -367)
+texture = ExtResource("1_t60l0")

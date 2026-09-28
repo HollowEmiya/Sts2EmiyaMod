@@ -1,3 +1,5 @@
+using MegaCrit.Sts2.Core.Combat;
+using MegaCrit.Sts2.Core.Combat.History.Entries;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
@@ -30,6 +32,9 @@ public class ManaLoading : ModCardTemplate
     private const TargetType targetType = TargetType.Self;
     // 是否在卡牌图鉴中显示
     private const bool shouldShowInCardLibrary = true;
+	private const string _playMaxKey = "PlayMax";
+
+	protected override bool ShouldGlowGoldInternal => CanDrawCard;
 
     // 卡图资源
     public override CardAssetProfile AssetProfile => new(
@@ -43,8 +48,22 @@ public class ManaLoading : ModCardTemplate
 
     // 卡牌基础数值
     protected override IEnumerable<DynamicVar> CanonicalVars => [
-        new BlockVar(8, ValueProp.Move)
+        new BlockVar(8, ValueProp.Move),
+		new IntVar("PlayMax", 2m),
+		new CardsVar(1)
     ];
+
+    private bool CanDrawCard
+	{
+		get
+		{
+			int num = CombatManager.Instance.History.CardPlaysFinished.
+                Count((CardPlayFinishedEntry e) =>
+                 e.HappenedThisTurn(base.CombatState) && 
+                 e.CardPlay.Card.Owner == base.Owner);
+			return num < base.DynamicVars["PlayMax"].IntValue;
+		}
+	}
 
     public ManaLoading() : base(energyCost, type, rarity, targetType, shouldShowInCardLibrary)
     {
@@ -54,6 +73,14 @@ public class ManaLoading : ModCardTemplate
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
         await CreatureCmd.GainBlock(base.Owner.Creature, base.DynamicVars.Block, cardPlay);
+        if (CanDrawCard)
+		{
+			await CardPileCmd.Draw(choiceContext, base.DynamicVars.Cards.BaseValue + 1, base.Owner);
+		}
+        else
+        {
+		    await CardPileCmd.Draw(choiceContext, base.DynamicVars.Cards.BaseValue, base.Owner);
+        }
         // CardModel cardModel = 
         //     (await CardSelectCmd.FromHand(prefs: new CardSelectorPrefs(CardSelectorPrefs.ExhaustSelectionPrompt, 1), context: choiceContext, player: base.Owner, filter: null, source: this)).FirstOrDefault();
     }

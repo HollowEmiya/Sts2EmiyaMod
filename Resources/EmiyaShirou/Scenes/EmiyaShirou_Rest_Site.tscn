@@ -2,10 +2,10 @@
 
 [ext_resource type="Texture2D" uid="uid://b7rj3tawoh5c5" path="res://Resources/EmiyaShirou/Images/EmiyaRest.png" id="1_v3pqf"]
 
-[node name="EmiyaShirouRestSite_tscn" type="Node2D"]
+[node name="EmiyaShirouRestSite" type="Node2D"]
 
 [node name="Node" type="Sprite2D" parent="."]
-scale = Vector2(0.18, 0.18)
+scale = Vector2(0.4, 0.4)
 texture = ExtResource("1_v3pqf")
 
 [node name="ControlRoot" type="Control" parent="."]
@@ -15,10 +15,10 @@ anchors_preset = 0
 [node name="SelectionReticle" type="Control" parent="ControlRoot"]
 unique_name_in_owner = true
 anchors_preset = 0
-offset_left = -100.0
-offset_top = -140.0
-offset_right = 100.0
-offset_bottom = 140.0
+offset_left = -250.0
+offset_top = -300.0
+offset_right = 250.0
+offset_bottom = 300.0
 
 [node name="Hitbox" type="Control" parent="ControlRoot"]
 anchors_preset = 0

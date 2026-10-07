@@ -1,5 +1,9 @@
 
 using Godot;
+using MegaCrit.Sts2.Core.Commands;
+using MegaCrit.Sts2.Core.Models;
+using STS2RitsuLib.Scaffolding.Visuals.StateMachine;
+using STS2RitsuLib.Scaffolding.Visuals.StateMachine.Backends;
 using MegaCrit.Sts2.Core.Entities.Characters;
 using MegaCrit.Sts2.Core.Models.Relics;
 using MegaCrit.Sts2.Core.Nodes.Combat;
@@ -77,12 +81,13 @@ public class EmiyaShirouCharacter :
                     "res://Resources/EmiyaShirou/Scenes/EmiyaShirou_Bg.tscn",
                 // 人物选择图标。
                 CharacterSelectIconPath: 
-                    "res://Resources/EmiyaShirou/Scenes/EmiyaShirouSelected.png",
+                    "res://Resources/EmiyaShirou/Images/EmiyaShirouSelected.png",
                 // 人物选择图标-锁定状态。
                 CharacterSelectLockedIconPath:
-                    "res://Resources/EmiyaShirou/Scenes/EmiyaShirouSelectedLocked.png",
+                    "res://Resources/EmiyaShirou/Images/EmiyaShirouSelectedLocked.png",
                 // 人物选择过渡动画。
-                // CharacterSelectTransitionPath: "res://materials/transitions/ironclad_transition_mat.tres",
+                CharacterSelectTransitionPath:
+                    "res://Resources/EmiyaShirou/Scenes/EmiyaShirou_Transition.tres",
                 // 地图上的角色标记图标、表情轮盘上的角色头像。
                 MapMarkerPath: 
                     "res://Resources/EmiyaShirou/Images/EmiyaShirouIcon.png"
@@ -94,7 +99,7 @@ public class EmiyaShirouCharacter :
             Audio: new(
                 // 攻击音效
                 AttackSfx:  
-                    " event:/Sts2EmiyaMod/EmiyaShirou/sfx/EmiyaShirouAttack",
+                    "event:/Sts2EmiyaMod/EmiyaShirou/sfx/EmiyaShirouAttack",
                 // 施法音效
                 CastSfx: 
                     "event:/Sts2EmiyaMod/EmiyaShirou/sfx/EmiyaShirouCast",
@@ -146,6 +151,37 @@ public class EmiyaShirouCharacter :
          RitsuGodotNodeFactories.CreateFromScenePath<NCreatureVisuals>
             (AssetProfile.Scenes!.VisualsPath!);
 
+    // AnimatedSprite2D 播完一次不会自动切换动画；由状态机安排后继状态。
+    protected override ModAnimStateMachine? SetupCustomCombatAnimationStateMachine(
+        Node visualsRoot, CharacterModel character)
+    {
+        var sprite = visualsRoot as AnimatedSprite2D
+            ?? visualsRoot.GetNodeOrNull<AnimatedSprite2D>("%Visuals");
+        if (sprite == null)
+            throw new InvalidOperationException("卫宫战斗场景缺少 AnimatedSprite2D Visuals 节点。");
+
+        var builder = ModAnimStateMachineBuilder.Create()
+            .AddState("Idle", loop: true).AsInitial().Done()
+            .AddState("Attack").WithNext("Idle").Done()
+            .AddState("Cast").WithNext("Idle").Done()
+            .AddState("Hit").WithNext("Idle").Done()
+            .AddState("Die").Done();
+
+        builder.AddAnyState("Idle", "Idle");
+        builder.AddAnyState("Attack", "Attack");
+        builder.AddAnyState("Cast", "Cast");
+        builder.AddAnyState("Hit", "Hit");
+        builder.AddAnyState("Dead", "Die");
+        builder.AddAnyState("Relaxed", "Idle");
+        // 本体的死亡语音位于 Spine 分支；序列帧人物需要显式接入。
+        // AnimationChanged 仅在动画名称改变时触发，避免每一帧重复播放。
+        sprite.AnimationChanged += () =>
+        {
+            if (sprite.Animation == "Die")
+                SfxCmd.Play(character.DeathSfx);
+        };
+        return builder.Build(new AnimatedSprite2DBackend(sprite));
+    }
     // 攻击建筑师的攻击特效列表
     public override List<string> GetArchitectAttackVfx() => [
         "vfx/vfx_attack_blunt",

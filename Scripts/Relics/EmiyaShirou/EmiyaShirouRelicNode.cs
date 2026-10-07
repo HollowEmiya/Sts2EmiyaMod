@@ -11,8 +11,8 @@ public class EmiyaShirouRelicNode : ModRelicTemplate
         // 85x85
         IconPath: $"res://Sts2EmiyaMod/Images/Relics/EmiyaShirou/{GetType().Name}.png",
         // outline 85x85
-        IconOutlinePath: $"res://res://Sts2EmiyaMod/Images/Relics/EmiyaShirou/Outline/{GetType().Name}.png",
+        IconOutlinePath: $"res://Sts2EmiyaMod/Images/Relics/EmiyaShirou/Outline/{GetType().Name}.png",
         // 256x256
-        BigIconPath:$"res://res://Sts2EmiyaMod/Images/Relics/EmiyaShirou/Big/{GetType().Name}.png"
+        BigIconPath:$"res://Sts2EmiyaMod/Images/Relics/EmiyaShirou/Big/{GetType().Name}.png"
     );
 }

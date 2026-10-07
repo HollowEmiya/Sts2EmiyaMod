@@ -1,0 +1,267 @@
+[gd_scene load_steps=64 format=3 uid="uid://dnlkvt0puleuv"]
+
+[ext_resource type="Texture2D" uid="uid://h461asbkys47" path="res://Resources/EmiyaShirou/Aniamtions/TreasureArms2_a_NoArm/0001.png" id="1_jjkin"]
+[ext_resource type="Texture2D" uid="uid://b4e5cp3si8803" path="res://Resources/EmiyaShirou/Aniamtions/TreasureArms2_a_NoArm/0002.png" id="2_htxs7"]
+[ext_resource type="Texture2D" uid="uid://bdoqnhsq6uidk" path="res://Resources/EmiyaShirou/Aniamtions/TreasureArms2_a_NoArm/0003.png" id="3_dkv7x"]
+[ext_resource type="Texture2D" uid="uid://dyeen2pytfiy8" path="res://Resources/EmiyaShirou/Aniamtions/TreasureArms2_a_NoArm/0004.png" id="4_njv4k"]
+[ext_resource type="Texture2D" uid="uid://d1j28uj1pxjwm" path="res://Resources/EmiyaShirou/Aniamtions/TreasureArms2_a_NoArm/0005.png" id="5_wobs6"]
+[ext_resource type="Texture2D" uid="uid://w76vrboi52eq" path="res://Resources/EmiyaShirou/Aniamtions/TreasureArms2_a_NoArm/0006.png" id="6_5tyye"]
+[ext_resource type="Texture2D" uid="uid://b6bwo5vvvgijo" path="res://Resources/EmiyaShirou/Aniamtions/TreasureArms2_a_NoArm/0007.png" id="7_jsyyk"]
+[ext_resource type="Texture2D" uid="uid://d37dee7t1o3j5" path="res://Resources/EmiyaShirou/Aniamtions/TreasureArms2_a_NoArm/0008.png" id="8_6tt87"]
+[ext_resource type="Texture2D" uid="uid://wi53diu6rxmw" path="res://Resources/EmiyaShirou/Aniamtions/TreasureArms2_a_NoArm/0009.png" id="9_t1hsx"]
+[ext_resource type="Texture2D" uid="uid://c8u3rwdv7mplm" path="res://Resources/EmiyaShirou/Aniamtions/TreasureArms2_a_NoArm/0010.png" id="10_knf40"]
+[ext_resource type="Texture2D" uid="uid://dlaji64cc172j" path="res://Resources/EmiyaShirou/Aniamtions/TreasureArms2_a_NoArm/0011.png" id="11_cts1w"]
+[ext_resource type="Texture2D" uid="uid://dbj4inmk8b72y" path="res://Resources/EmiyaShirou/Aniamtions/TreasureArms2_a_NoArm/0012.png" id="12_l1su8"]
+[ext_resource type="Texture2D" uid="uid://dqsowldaxj4xi" path="res://Resources/EmiyaShirou/Aniamtions/TreasureArms2_a_NoArm/0013.png" id="13_vb17i"]
+[ext_resource type="Texture2D" uid="uid://d1qxo4q4p63nu" path="res://Resources/EmiyaShirou/Aniamtions/TreasureArms2_a_NoArm/0014.png" id="14_hforj"]
+[ext_resource type="Texture2D" uid="uid://c0tdqgxjq2aie" path="res://Resources/EmiyaShirou/Aniamtions/TreasureArms2_a_NoArm/0015.png" id="15_1ajm5"]
+[ext_resource type="Texture2D" uid="uid://b75w2yy8ryg5x" path="res://Resources/EmiyaShirou/Aniamtions/TreasureArms2_a_NoArm/0016.png" id="16_f2saj"]
+[ext_resource type="Texture2D" uid="uid://b1kusig6yy6fn" path="res://Resources/EmiyaShirou/Aniamtions/TreasureArms2_a_NoArm/0017.png" id="17_3noq3"]
+[ext_resource type="Texture2D" uid="uid://d0vj6e1kw5jg5" path="res://Resources/EmiyaShirou/Aniamtions/TreasureArms2_a_NoArm/0018.png" id="18_i6tji"]
+[ext_resource type="Texture2D" uid="uid://ohdyu44d7bhi" path="res://Resources/EmiyaShirou/Aniamtions/TreasureArms2_a_NoArm/0019.png" id="19_x1e6a"]
+[ext_resource type="Texture2D" uid="uid://b8tq4d6vuwet" path="res://Resources/EmiyaShirou/Aniamtions/TreasureArms2_a_NoArm/0020.png" id="20_52bro"]
+[ext_resource type="Texture2D" uid="uid://dl4mgveqhc4xe" path="res://Resources/EmiyaShirou/Aniamtions/TreasureArms2_a_NoArm/0021.png" id="21_pguvq"]
+[ext_resource type="Texture2D" uid="uid://dcihyn6quhnpm" path="res://Resources/EmiyaShirou/Aniamtions/TreasureArms2_a_NoArm/0022.png" id="22_ul606"]
+[ext_resource type="Texture2D" uid="uid://b3m4l2dq74wxf" path="res://Resources/EmiyaShirou/Aniamtions/TreasureArms2_a_NoArm/0023.png" id="23_wgd1m"]
+[ext_resource type="Texture2D" uid="uid://cvlpbjg8m7dp4" path="res://Resources/EmiyaShirou/Aniamtions/TreasureArms2_a_NoArm/0024.png" id="24_6pfby"]
+[ext_resource type="Texture2D" uid="uid://cksvc6q4chmfi" path="res://Resources/EmiyaShirou/Aniamtions/TreasureArms2_a_NoArm/0025.png" id="25_fjeql"]
+[ext_resource type="Texture2D" uid="uid://cyv78bl7bx6am" path="res://Resources/EmiyaShirou/Aniamtions/TreasureArms2_a_NoArm/0026.png" id="26_mntrj"]
+[ext_resource type="Texture2D" uid="uid://1ojmvk1aqxgp" path="res://Resources/EmiyaShirou/Aniamtions/TreasureArms2_a_NoArm/0027.png" id="27_dhpg0"]
+[ext_resource type="Texture2D" uid="uid://ciiw0d8n3libp" path="res://Resources/EmiyaShirou/Aniamtions/TreasureArms2_a_NoArm/0028.png" id="28_lmtqt"]
+[ext_resource type="Texture2D" uid="uid://boid3e17iuxgl" path="res://Resources/EmiyaShirou/Aniamtions/TreasureArms2_a_NoArm/0029.png" id="29_bojic"]
+[ext_resource type="Texture2D" uid="uid://dml8c5qrciwsf" path="res://Resources/EmiyaShirou/Aniamtions/TreasureArms2_a_NoArm/0030.png" id="30_afo0n"]
+[ext_resource type="Texture2D" uid="uid://b0vpchr3lryg0" path="res://Resources/EmiyaShirou/Aniamtions/TreasureArms2_a_NoArm/0031.png" id="31_3kx5x"]
+[ext_resource type="Texture2D" uid="uid://dmnsvrulf3mja" path="res://Resources/EmiyaShirou/Aniamtions/TreasureArms2_a_NoArm/0032.png" id="32_cac1f"]
+[ext_resource type="Texture2D" uid="uid://dfgckbmo0the1" path="res://Resources/EmiyaShirou/Aniamtions/TreasureArms2_a_NoArm/0033.png" id="33_ffk8s"]
+[ext_resource type="Texture2D" uid="uid://cixtfxtvec7bt" path="res://Resources/EmiyaShirou/Aniamtions/TreasureArms2_a_NoArm/0034.png" id="34_0y3uq"]
+[ext_resource type="Texture2D" uid="uid://bhhg5jnjy7yu2" path="res://Resources/EmiyaShirou/Aniamtions/TreasureArms2_a_NoArm/0035.png" id="35_x8ekr"]
+[ext_resource type="Texture2D" uid="uid://bvf42wdq78qiq" path="res://Resources/EmiyaShirou/Aniamtions/TreasureArms2_a_NoArm/0036.png" id="36_nekkx"]
+[ext_resource type="Texture2D" uid="uid://cr52rwwrm76uq" path="res://Resources/EmiyaShirou/Aniamtions/TreasureArms2_a_NoArm/0037.png" id="37_ulq5y"]
+[ext_resource type="Texture2D" uid="uid://dnivppt2odhig" path="res://Resources/EmiyaShirou/Aniamtions/TreasureArms2_a_NoArm/0038.png" id="38_jmii6"]
+[ext_resource type="Texture2D" uid="uid://bh5ch1m87gwxj" path="res://Resources/EmiyaShirou/Aniamtions/TreasureArms2_a_NoArm/0039.png" id="39_578ov"]
+[ext_resource type="Texture2D" uid="uid://ca8tvcjmcrow2" path="res://Resources/EmiyaShirou/Aniamtions/TreasureArms2_a_NoArm/0040.png" id="40_71xnl"]
+[ext_resource type="Texture2D" uid="uid://6o0um4qethph" path="res://Resources/EmiyaShirou/Aniamtions/TreasureArms2_a_NoArm/0041.png" id="41_i0g24"]
+[ext_resource type="Texture2D" uid="uid://dbte3ssgjvkf7" path="res://Resources/EmiyaShirou/Aniamtions/TreasureArms2_a_NoArm/0042.png" id="42_pbmgf"]
+[ext_resource type="Texture2D" uid="uid://dq1b4kw7sk86o" path="res://Resources/EmiyaShirou/Aniamtions/TreasureArms2_a_NoArm/0043.png" id="43_712r6"]
+[ext_resource type="Texture2D" uid="uid://c0m7fxnxd6r4y" path="res://Resources/EmiyaShirou/Aniamtions/TreasureArms2_a_NoArm/0044.png" id="44_00nf4"]
+[ext_resource type="Texture2D" uid="uid://cjurew0p16c63" path="res://Resources/EmiyaShirou/Aniamtions/TreasureArms2_a_NoArm/0045.png" id="45_lwb60"]
+[ext_resource type="Texture2D" uid="uid://b0umkmadefyqu" path="res://Resources/EmiyaShirou/Aniamtions/TreasureArms2_a_NoArm/0046.png" id="46_plsg5"]
+[ext_resource type="Texture2D" uid="uid://c3oqprq68d876" path="res://Resources/EmiyaShirou/Aniamtions/TreasureArms2_a_NoArm/0047.png" id="47_4eu7x"]
+[ext_resource type="Texture2D" uid="uid://3oeajgwrkpmv" path="res://Resources/EmiyaShirou/Aniamtions/TreasureArms2_a_NoArm/0048.png" id="48_4h708"]
+[ext_resource type="Texture2D" uid="uid://bbxr05wos6ijn" path="res://Resources/EmiyaShirou/Aniamtions/TreasureArms2_a_NoArm/0049.png" id="49_oxm3m"]
+[ext_resource type="Texture2D" uid="uid://fvs0luhyiesf" path="res://Resources/EmiyaShirou/Aniamtions/TreasureArms2_a_NoArm/0050.png" id="50_jd1hc"]
+[ext_resource type="Texture2D" uid="uid://b4fs4ffm7xhum" path="res://Resources/EmiyaShirou/Aniamtions/TreasureArms2_a_NoArm/0051.png" id="51_u8bm7"]
+[ext_resource type="Texture2D" uid="uid://dv22m0o4jo74u" path="res://Resources/EmiyaShirou/Aniamtions/TreasureArms2_a_NoArm/0052.png" id="52_86ox5"]
+[ext_resource type="Texture2D" uid="uid://chfmkv8b60hom" path="res://Resources/EmiyaShirou/Aniamtions/TreasureArms2_a_NoArm/0053.png" id="53_xob1i"]
+[ext_resource type="Texture2D" uid="uid://cd1wg04hyol2u" path="res://Resources/EmiyaShirou/Aniamtions/TreasureArms2_a_NoArm/0054.png" id="54_i1ixc"]
+[ext_resource type="Texture2D" uid="uid://bv2ogt5vhi3lt" path="res://Resources/EmiyaShirou/Aniamtions/TreasureArms2_a_NoArm/0055.png" id="55_37ept"]
+[ext_resource type="Texture2D" uid="uid://bo33s0i6guymy" path="res://Resources/EmiyaShirou/Aniamtions/TreasureArms2_a_NoArm/0056.png" id="56_lh16h"]
+[ext_resource type="Texture2D" uid="uid://bulw8co42wsiu" path="res://Resources/EmiyaShirou/Aniamtions/TreasureArms2_a_NoArm/0057.png" id="57_5ncbc"]
+[ext_resource type="Texture2D" uid="uid://c37g22f8oga2j" path="res://Resources/EmiyaShirou/Aniamtions/TreasureArms2_a_NoArm/0058.png" id="58_bf4hm"]
+[ext_resource type="Texture2D" uid="uid://cfmxmrya52upj" path="res://Resources/EmiyaShirou/Aniamtions/TreasureArms2_a_NoArm/0059.png" id="59_r2rat"]
+[ext_resource type="Texture2D" uid="uid://bmxxpr1xk1p76" path="res://Resources/EmiyaShirou/Aniamtions/TreasureArms2_a_NoArm/0060.png" id="60_nnd5d"]
+[ext_resource type="Texture2D" uid="uid://utypex2thcc8" path="res://Resources/EmiyaShirou/Aniamtions/TreasureArms2_a_NoArm/0061.png" id="61_p3ulj"]
+[ext_resource type="Texture2D" uid="uid://diovvh2pqek7f" path="res://Resources/EmiyaShirou/Aniamtions/TreasureArms2_a_NoArm/0062.png" id="62_yo3r0"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_08c54"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_jjkin")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_htxs7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_dkv7x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_njv4k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_wobs6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_5tyye")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_jsyyk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_6tt87")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_t1hsx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_knf40")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_cts1w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_l1su8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_vb17i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_hforj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_1ajm5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_f2saj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_3noq3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_i6tji")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_x1e6a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_52bro")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_pguvq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_ul606")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_wgd1m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_6pfby")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_fjeql")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_mntrj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_dhpg0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_lmtqt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_bojic")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_afo0n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_3kx5x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_cac1f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_ffk8s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_0y3uq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_x8ekr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_nekkx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_ulq5y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_jmii6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_578ov")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_71xnl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_i0g24")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_pbmgf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_712r6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_00nf4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_lwb60")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_plsg5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_4eu7x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_4h708")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_oxm3m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_jd1hc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_u8bm7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_86ox5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_xob1i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_i1ixc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_37ept")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_lh16h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_5ncbc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_bf4hm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_r2rat")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_nnd5d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_p3ulj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_yo3r0")
+}],
+"loop": true,
+"name": &"relaxed_loop",
+"speed": 30.0
+}]
+
+[node name="EmiyaShirouMerchant" type="Node2D"]
+
+[node name="EmiyaShirou" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -37.000004)
+scale = Vector2(0.18, 0.18)
+sprite_frames = SubResource("SpriteFrames_08c54")
+animation = &"relaxed_loop"
+frame_progress = 0.4278805

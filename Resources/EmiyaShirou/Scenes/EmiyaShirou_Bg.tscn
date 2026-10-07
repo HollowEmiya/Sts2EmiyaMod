@@ -1,0 +1,44 @@
+[gd_scene load_steps=3 format=3 uid="uid://yf76i8c1mvy3"]
+
+[ext_resource type="Texture2D" uid="uid://d0hmb03jkks17" path="res://Sts2EmiyaMod/Images/Emiya/Gear.png" id="1_hr64d"]
+[ext_resource type="Texture2D" uid="uid://dfhvrwv2oj4v2" path="res://Sts2EmiyaMod/Images/Emiya/cut470_emy00_full.png" id="2_upoim"]
+
+[node name="EmiyaShirouBg" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -384.0
+offset_top = -216.0
+offset_right = 2176.0
+offset_bottom = 984.0
+pivot_offset = Vector2(1280, 600)
+
+[node name="Control" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 2560.0
+offset_bottom = 1200.0
+
+[node name="Backgroud" type="TextureRect" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.27
+anchor_top = 0.358
+anchor_right = 0.27
+anchor_bottom = 0.358
+offset_left = -301.2
+offset_top = -205.6
+offset_right = 2258.8
+offset_bottom = 1234.4
+texture = ExtResource("1_hr64d")
+
+[node name="Emiya" type="TextureRect" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.27
+anchor_top = 0.358
+anchor_right = 0.27
+anchor_bottom = 0.358
+offset_left = 461.8
+offset_top = 42.399994
+offset_right = 2509.8
+offset_bottom = 2090.4
+texture = ExtResource("2_upoim")

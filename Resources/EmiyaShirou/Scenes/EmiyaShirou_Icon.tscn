@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://bogsk3llqrvx4"]
+
+[ext_resource type="Texture2D" uid="uid://mu3pmotl48cv" path="res://Resources/EmiyaShirou/Images/EmiyaShirouIcon.png" id="1_qm5n4"]
+
+[node name="EmiyaShirouIcon" type="TextureRect"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("1_qm5n4")
+expand_mode = 1
+stretch_mode = 5

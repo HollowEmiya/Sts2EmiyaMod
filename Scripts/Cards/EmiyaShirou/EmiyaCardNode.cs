@@ -3,7 +3,9 @@ using MegaCrit.Sts2.Core.Models.CardPools;
 using STS2RitsuLib.Interop.AutoRegistration;
 using STS2RitsuLib.Scaffolding.Content;
 
-[RegisterCard(typeof(ColorlessCardPool), Inherit = true)]
+namespace Sts2EmiyaMod.Scripts;
+
+[RegisterCard(typeof(EmiyaShirouCardPool), Inherit = true)]
 public abstract class EmiyaCardNode : ModCardTemplate
 {
     // 卡图资源

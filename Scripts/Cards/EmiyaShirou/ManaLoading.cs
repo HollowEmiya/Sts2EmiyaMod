@@ -15,8 +15,9 @@ using STS2RitsuLib.Scaffolding.Content;
 
 namespace Sts2EmiyaMod.Scripts;
 
+// 魔力装填：获得格挡，抽牌
 // 注册卡牌到指定池（这里是无色）。如果要写自定义池看添加人物的开头
-[RegisterCard(typeof(ColorlessCardPool))]
+[RegisterCard(typeof(EmiyaShirouCardPool))]
 // 注册成人物起始卡，后面是数量。不需要删除即可。
 // [RegisterCharacterStarterCard(typeof(TestCharacter), 5)]
 public class ManaLoading : ModCardTemplate

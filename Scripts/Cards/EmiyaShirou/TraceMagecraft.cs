@@ -11,9 +11,9 @@ using STS2RitsuLib.Scaffolding.Content;
 
 namespace Sts2EmiyaMod.Scripts;
 
-
+// 投影魔术：选择一张牌投影
 // TODO:需要给生成的牌加Tag
-[RegisterCard(typeof(ColorlessCardPool))]
+[RegisterCard(typeof(EmiyaShirouCardPool))]
 public class TraceMagecraft : ModCardTemplate
 {
     public override bool GainsBlock => true;

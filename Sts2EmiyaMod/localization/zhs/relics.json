@@ -1,0 +1,9 @@
+{
+    "STS2_EMIYA_MOD_RELIC_MAGIC_CIRCUITS.title": "魔术回路",
+    "STS2_EMIYA_MOD_RELIC_MAGIC_CIRCUITS.description": "在每场战斗的第一回合获得{Energy:energyIcons()}。\n在战斗结束时，回复[green]{Heal}[/green]点生命。",
+    "STS2_EMIYA_MOD_RELIC_MAGIC_CIRCUITS.flavor": "[red]魔术师具有的疑似神经。\n能够将生命力转变为魔力的通路，也是连接成为基盘的大魔术式的通路。[/red]\n", 
+    "STS2_EMIYA_MOD_RELIC_MAGIC_CIRCUITS_EX.title": "魔术回路EX",
+    "STS2_EMIYA_MOD_RELIC_MAGIC_CIRCUITS_EX.description": "在每场战斗的第一回合获得{Energy:energyIcons()}。\n在战斗结束时，回复[green]{Heal}[/green]点生命。",
+    "STS2_EMIYA_MOD_RELIC_MAGIC_CIRCUITS_EX.flavor": "[red]觉醒后的魔术回路。\n能够将提供充足的魔力和生命力。[/red]\n",
+    "SEA_GLASS.EmiyaShirouCharacter.title": "镜面玻璃"
+}

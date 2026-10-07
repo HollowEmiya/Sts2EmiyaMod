@@ -1,7 +1,9 @@
 using System.Reflection;
 using MegaCrit.Sts2.Core.Logging;
 using MegaCrit.Sts2.Core.Modding;
+using MegaCrit.Sts2.Core.Models.Cards;
 using STS2RitsuLib;
+using STS2RitsuLib.Audio;
 using STS2RitsuLib.Interop;
 
 namespace Sts2EmiyaMod.Scripts;
@@ -19,8 +21,26 @@ public class Entry
         // var harmony = new Harmony("com.example.testmod");
         // harmony.PatchAll();
         var assembly = Assembly.GetExecutingAssembly();
-        RitsuLibFramework.EnsureGodotScriptsRegistered(assembly, Logger);
+        RitsuLibFramework.
+            EnsureGodotScriptsRegistered(assembly, Logger);
         // 自动注册内容
-        ModTypeDiscoveryHub.RegisterModAssembly(ModId, assembly);
+        ModTypeDiscoveryHub.
+            RegisterModAssembly(ModId, assembly);
+        
+        RitsuLibFramework.
+            RegisterArchaicToothTranscendenceMapping<Kyudo, Hrunting>();
+
+        RitsuLibFramework.
+            RegisterTouchOfOrobasRefinementMapping<MagicCircuits, MagicCircuitsEX>();
+
+        FmodStudioDeferredBankRegistration.RegisterBank
+        (
+            "res://Resources/EmiyaShirou/Audios/EmiyaShirou.bank"
+        );
+
+        FmodStudioDeferredBankRegistration.RegisterStudioGuidMappings
+        (
+            "res://Resources/EmiyaShirou/Audios/GUIDs.txt"
+        );
     }
 }

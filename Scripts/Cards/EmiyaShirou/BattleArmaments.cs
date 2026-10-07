@@ -15,8 +15,12 @@ using STS2RitsuLib.Keywords;
 using STS2RitsuLib.Scaffolding.Content;
 namespace Sts2EmiyaMod.Scripts;
 
+/// ToDo:要给锻造后的牌加魔力武器
 // 注册卡牌到指定池（这里是无色）。如果要写自定义池看添加人物的开头
-[RegisterCard(typeof(ColorlessCardPool))]
+/// <summary>
+/// 战斗武装:造成8点伤害，选择一张牌进行升级并锻造
+/// </summary>
+[RegisterCard(typeof(EmiyaShirouCardPool))]
 public class BattleArmaments : EmiyaCardNode
 {
     // 基础耗能
@@ -47,15 +51,15 @@ public class BattleArmaments : EmiyaCardNode
 			.WithHitFx("vfx/vfx_dramatic_stab", null, "blunt_attack.mp3")
 			.Execute(choiceContext);
 
-        if (base.IsUpgraded)
-		{
-			foreach (CardModel item in PileType.Hand.GetPile(base.Owner).Cards.Where((CardModel c) => c.IsUpgradable))
-			{
-				CardCmd.Upgrade(item);
-                CardCmd.Enchant<Reinforcement>(item, 2);
-			}
-			return;
-		}
+        // if (base.IsUpgraded)
+		// {
+		// 	foreach (CardModel item in PileType.Hand.GetPile(base.Owner).Cards.Where((CardModel c) => c.IsUpgradable))
+		// 	{
+		// 		CardCmd.Upgrade(item);
+        //         CardCmd.Enchant<Reinforcement>(item, 2);
+		// 	}
+		// 	return;
+		// }
 		CardModel cardModel = await CardSelectCmd.FromHandForUpgrade(choiceContext, base.Owner, this);
 		if (cardModel != null)
 		{

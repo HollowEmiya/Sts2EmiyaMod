@@ -1,0 +1,17 @@
+{
+    "STS2_EMIYA_MOD_CHARACTER_EMIYA_SHIROU_CHARACTER.aromaPrinciple": "[sine][red]深呼吸，保持冷静。[/red][/sine]",
+    "STS2_EMIYA_MOD_CHARACTER_EMIYA_SHIROU_CHARACTER.banter.alive.endTurnPing": "无论你磨蹭多久，敌人都不会自杀的。",
+    "STS2_EMIYA_MOD_CHARACTER_EMIYA_SHIROU_CHARACTER.banter.dead.endTurnPing": "又失败了吗……",
+    "STS2_EMIYA_MOD_CHARACTER_EMIYA_SHIROU_CHARACTER.cardsModifierDescription": "卫宫士郎的卡牌现在会出现在奖励和商店中。",
+    "STS2_EMIYA_MOD_CHARACTER_EMIYA_SHIROU_CHARACTER.cardsModifierTitle": "卫宫士郎的卡牌",
+    "STS2_EMIYA_MOD_CHARACTER_EMIYA_SHIROU_CHARACTER.description": "卫宫士郎，原本是魔术师。\n遵从召唤作为英灵现界来到尖塔。",
+    "STS2_EMIYA_MOD_CHARACTER_EMIYA_SHIROU_CHARACTER.eventDeathPrevention": "还不能在这里结束……",
+    "STS2_EMIYA_MOD_CHARACTER_EMIYA_SHIROU_CHARACTER.goldMonologue": "财宝啊……要是她在的话应该会很高兴吧。",
+    "STS2_EMIYA_MOD_CHARACTER_EMIYA_SHIROU_CHARACTER.possessiveAdjective": "他的",
+    "STS2_EMIYA_MOD_CHARACTER_EMIYA_SHIROU_CHARACTER.pronounObject": "他",
+    "STS2_EMIYA_MOD_CHARACTER_EMIYA_SHIROU_CHARACTER.pronounPossessive": "他的",
+    "STS2_EMIYA_MOD_CHARACTER_EMIYA_SHIROU_CHARACTER.pronounSubject": "他",
+    "STS2_EMIYA_MOD_CHARACTER_EMIYA_SHIROU_CHARACTER.title": "卫宫士郎",
+    "STS2_EMIYA_MOD_CHARACTER_EMIYA_SHIROU_CHARACTER.titleObject": "卫宫士郎",
+    "STS2_EMIYA_MOD_CHARACTER_EMIYA_SHIROU_CHARACTER.unlockText": "用[pink]{Prerequisite}[/pink]进行一局游戏来解锁这个角色。"
+}

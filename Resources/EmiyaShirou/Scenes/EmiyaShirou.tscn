@@ -1,0 +1,1768 @@
+[gd_scene load_steps=305 format=3 uid="uid://hqel6mjyr1p5"]
+
+[ext_resource type="Texture2D" uid="uid://bdqjbwnljojxd" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0001.png" id="1_ccoet"]
+[ext_resource type="Texture2D" uid="uid://b1ulkaceojxtv" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0002.png" id="2_cc4wl"]
+[ext_resource type="Texture2D" uid="uid://dm5aqpee1cq4j" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0003.png" id="3_3stpl"]
+[ext_resource type="Texture2D" uid="uid://b6ratl8m6uegh" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0004.png" id="4_m2gym"]
+[ext_resource type="Texture2D" uid="uid://crsnuwplo6ofa" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0005.png" id="5_20y6e"]
+[ext_resource type="Texture2D" uid="uid://cdmnkypx3ir6k" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0006.png" id="6_xp64a"]
+[ext_resource type="Texture2D" uid="uid://gj22y7riuqg1" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0007.png" id="7_oj88y"]
+[ext_resource type="Texture2D" uid="uid://bpycdj7g62jci" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0008.png" id="8_lls30"]
+[ext_resource type="Texture2D" uid="uid://bm58qn05q46j3" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0009.png" id="9_3fn4r"]
+[ext_resource type="Texture2D" uid="uid://dpu38farngai2" path="res://Resources/EmiyaShirou/Aniamtions/Attack/0010.png" id="10_l1581"]
+[ext_resource type="Texture2D" uid="uid://u8oj00rxkcah" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0010.png" id="10_tn141"]
+[ext_resource type="Texture2D" uid="uid://bcbldkhdojqhw" path="res://Resources/EmiyaShirou/Aniamtions/Attack/0011.png" id="11_7bmpf"]
+[ext_resource type="Texture2D" uid="uid://pk8uurvndbhr" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0011.png" id="11_p5nas"]
+[ext_resource type="Texture2D" uid="uid://bcr81x3w8bec1" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0012.png" id="12_0oxfg"]
+[ext_resource type="Texture2D" uid="uid://dl1vu0y4ypeey" path="res://Resources/EmiyaShirou/Aniamtions/Attack/0012.png" id="12_ejylc"]
+[ext_resource type="Texture2D" uid="uid://rfmdngefbv03" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0013.png" id="13_p3xb1"]
+[ext_resource type="Texture2D" uid="uid://cryi2bd0itbpa" path="res://Resources/EmiyaShirou/Aniamtions/Attack/0013.png" id="13_u3p8s"]
+[ext_resource type="Texture2D" uid="uid://bcstb5iigqknp" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0014.png" id="14_pe11u"]
+[ext_resource type="Texture2D" uid="uid://cy2h3uncu8mee" path="res://Resources/EmiyaShirou/Aniamtions/Attack/0014.png" id="14_qodkt"]
+[ext_resource type="Texture2D" uid="uid://cko0ptnnkixm5" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0015.png" id="15_2y4dr"]
+[ext_resource type="Texture2D" uid="uid://bxl3ip42ip7eb" path="res://Resources/EmiyaShirou/Aniamtions/Attack/0015.png" id="15_468nt"]
+[ext_resource type="Texture2D" uid="uid://eqnwgarqrlgi" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0016.png" id="16_0r1vq"]
+[ext_resource type="Texture2D" uid="uid://0q0r3hndjuh4" path="res://Resources/EmiyaShirou/Aniamtions/Attack/0016.png" id="16_sbfcr"]
+[ext_resource type="Texture2D" uid="uid://cdkb645j6f50t" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0017.png" id="17_7virj"]
+[ext_resource type="Texture2D" uid="uid://cv4dtt2e0fo7u" path="res://Resources/EmiyaShirou/Aniamtions/Attack/0017.png" id="17_xnueo"]
+[ext_resource type="Texture2D" uid="uid://bhjuetdgju0hb" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0018.png" id="18_lxpay"]
+[ext_resource type="Texture2D" uid="uid://1v2g57cpl4ij" path="res://Resources/EmiyaShirou/Aniamtions/Attack/0018.png" id="18_pm32a"]
+[ext_resource type="Texture2D" uid="uid://c3tdwsxeu3jh" path="res://Resources/EmiyaShirou/Aniamtions/Attack/0019.png" id="19_4lih0"]
+[ext_resource type="Texture2D" uid="uid://cf4pdrlsrrlwm" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0019.png" id="19_igk67"]
+[ext_resource type="Texture2D" uid="uid://b7f24m6xy6b45" path="res://Resources/EmiyaShirou/Aniamtions/Attack/0020.png" id="20_5u40b"]
+[ext_resource type="Texture2D" uid="uid://civiufjd0vau6" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0020.png" id="20_avp04"]
+[ext_resource type="Texture2D" uid="uid://b4ff60sdxg3xd" path="res://Resources/EmiyaShirou/Aniamtions/Attack/0021.png" id="21_35k6f"]
+[ext_resource type="Texture2D" uid="uid://c2hb2brtk8fqq" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0021.png" id="21_aw1fp"]
+[ext_resource type="Texture2D" uid="uid://dk860rnxyhtct" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0022.png" id="22_dq633"]
+[ext_resource type="Texture2D" uid="uid://c57kgr7855uxy" path="res://Resources/EmiyaShirou/Aniamtions/Attack/0022.png" id="22_txr3g"]
+[ext_resource type="Texture2D" uid="uid://brprjpnuitpvd" path="res://Resources/EmiyaShirou/Aniamtions/Attack/0023.png" id="23_7m2dk"]
+[ext_resource type="Texture2D" uid="uid://h8jnakmpr1v3" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0023.png" id="23_7u6rj"]
+[ext_resource type="Texture2D" uid="uid://kyt7xxbbyxdv" path="res://Resources/EmiyaShirou/Aniamtions/Attack/0024.png" id="24_4ch5v"]
+[ext_resource type="Texture2D" uid="uid://bebfrslwpg1fx" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0024.png" id="24_47ouo"]
+[ext_resource type="Texture2D" uid="uid://bfk4cdhh30mrs" path="res://Resources/EmiyaShirou/Aniamtions/Attack/0025.png" id="25_cf5mu"]
+[ext_resource type="Texture2D" uid="uid://lgh4n7pf4ppi" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0025.png" id="25_n1eta"]
+[ext_resource type="Texture2D" uid="uid://dd0g3mvd1fef1" path="res://Resources/EmiyaShirou/Aniamtions/Attack/0026.png" id="26_67v36"]
+[ext_resource type="Texture2D" uid="uid://bpori34d5cja1" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0026.png" id="26_armtv"]
+[ext_resource type="Texture2D" uid="uid://biu1e58040y2w" path="res://Resources/EmiyaShirou/Aniamtions/Attack/0027.png" id="27_1q0eo"]
+[ext_resource type="Texture2D" uid="uid://55fdo0cmmwqt" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0027.png" id="27_rfuo8"]
+[ext_resource type="Texture2D" uid="uid://bgxjdsdbg8tt" path="res://Resources/EmiyaShirou/Aniamtions/Attack/0028.png" id="28_hd6nc"]
+[ext_resource type="Texture2D" uid="uid://psxcsc527ng4" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0028.png" id="28_xvko4"]
+[ext_resource type="Texture2D" uid="uid://j3qrj0dfn6h8" path="res://Resources/EmiyaShirou/Aniamtions/Attack/0029.png" id="29_xh6ox"]
+[ext_resource type="Texture2D" uid="uid://bv15t110vq5fy" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0029.png" id="29_y7dkd"]
+[ext_resource type="Texture2D" uid="uid://tjrq7c6acbwe" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0030.png" id="30_107df"]
+[ext_resource type="Texture2D" uid="uid://5pvbt16lkakr" path="res://Resources/EmiyaShirou/Aniamtions/Attack/0030.png" id="30_26307"]
+[ext_resource type="Texture2D" uid="uid://bc7rrlammf3x5" path="res://Resources/EmiyaShirou/Aniamtions/Attack/0031.png" id="31_1ge51"]
+[ext_resource type="Texture2D" uid="uid://bvlmm2liijkmk" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0031.png" id="31_2fgxm"]
+[ext_resource type="Texture2D" uid="uid://bfpkgqyq18nw1" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0032.png" id="32_atojp"]
+[ext_resource type="Texture2D" uid="uid://b5y3jpbw3xuuu" path="res://Resources/EmiyaShirou/Aniamtions/Attack/0032.png" id="32_xf5qi"]
+[ext_resource type="Texture2D" uid="uid://8cvcxcusr8yr" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0033.png" id="33_2i751"]
+[ext_resource type="Texture2D" uid="uid://cl4m44cq4x77m" path="res://Resources/EmiyaShirou/Aniamtions/Attack/0033.png" id="33_rn7ix"]
+[ext_resource type="Texture2D" uid="uid://c3u64i8d4jduh" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0034.png" id="34_55r1v"]
+[ext_resource type="Texture2D" uid="uid://u1d6ragegnvl" path="res://Resources/EmiyaShirou/Aniamtions/Attack/0034.png" id="34_b0yb1"]
+[ext_resource type="Texture2D" uid="uid://b3ssgyhr8bqnl" path="res://Resources/EmiyaShirou/Aniamtions/Attack/0035.png" id="35_1tccc"]
+[ext_resource type="Texture2D" uid="uid://dt5337gybwh8u" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0035.png" id="35_rdvh8"]
+[ext_resource type="Texture2D" uid="uid://b7e5pnqfeiiyg" path="res://Resources/EmiyaShirou/Aniamtions/Attack/0036.png" id="36_pb5rl"]
+[ext_resource type="Texture2D" uid="uid://3w4vd54xwc3t" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0036.png" id="36_reym2"]
+[ext_resource type="Texture2D" uid="uid://tah2gltluv68" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0037.png" id="37_68xww"]
+[ext_resource type="Texture2D" uid="uid://dovnit25ojkis" path="res://Resources/EmiyaShirou/Aniamtions/Attack/0037.png" id="37_pfd8t"]
+[ext_resource type="Texture2D" uid="uid://cqn1xnq060pd2" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0038.png" id="38_d6v56"]
+[ext_resource type="Texture2D" uid="uid://bdwgbcucn5rlw" path="res://Resources/EmiyaShirou/Aniamtions/Attack/0038.png" id="38_i8g30"]
+[ext_resource type="Texture2D" uid="uid://l7k7txus0ya0" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0039.png" id="39_f68nd"]
+[ext_resource type="Texture2D" uid="uid://ckmcpqa2orsok" path="res://Resources/EmiyaShirou/Aniamtions/Attack/0039.png" id="39_fkbnw"]
+[ext_resource type="Texture2D" uid="uid://blimn5lb6gr00" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0040.png" id="40_gvgm8"]
+[ext_resource type="Texture2D" uid="uid://dj0va7c7ph54n" path="res://Resources/EmiyaShirou/Aniamtions/Attack/0040.png" id="40_llnli"]
+[ext_resource type="Texture2D" uid="uid://brl6nji4wemc5" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0041.png" id="41_glneg"]
+[ext_resource type="Texture2D" uid="uid://bs6ylclyvml6i" path="res://Resources/EmiyaShirou/Aniamtions/Attack/0041.png" id="41_o55jt"]
+[ext_resource type="Texture2D" uid="uid://8akc8r84ibac" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0042.png" id="42_kvl6v"]
+[ext_resource type="Texture2D" uid="uid://dgcv8vi1c3c3k" path="res://Resources/EmiyaShirou/Aniamtions/Attack/0042.png" id="42_nmg7c"]
+[ext_resource type="Texture2D" uid="uid://cm7kst8lhwq4c" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0043.png" id="43_r5w67"]
+[ext_resource type="Texture2D" uid="uid://boeeup1srhmca" path="res://Resources/EmiyaShirou/Aniamtions/Attack/0043.png" id="43_xpylv"]
+[ext_resource type="Texture2D" uid="uid://jb4q2buc73gm" path="res://Resources/EmiyaShirou/Aniamtions/Attack/0044.png" id="44_26bbx"]
+[ext_resource type="Texture2D" uid="uid://chocmh0ts7o18" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0044.png" id="44_gu7et"]
+[ext_resource type="Texture2D" uid="uid://gjt2x40yyvxf" path="res://Resources/EmiyaShirou/Aniamtions/Attack/0045.png" id="45_pc7ww"]
+[ext_resource type="Texture2D" uid="uid://c0lelstkdkf6v" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0045.png" id="45_qgbyc"]
+[ext_resource type="Texture2D" uid="uid://diip32yx5xga0" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0046.png" id="46_02ms7"]
+[ext_resource type="Texture2D" uid="uid://c672s3k1wimge" path="res://Resources/EmiyaShirou/Aniamtions/Attack/0046.png" id="46_bmmxy"]
+[ext_resource type="Texture2D" uid="uid://dvswejm4xjjt3" path="res://Resources/EmiyaShirou/Aniamtions/Attack/0047.png" id="47_325to"]
+[ext_resource type="Texture2D" uid="uid://cbuta1b6r2wds" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0047.png" id="47_waw3i"]
+[ext_resource type="Texture2D" uid="uid://km7kuf7vhakm" path="res://Resources/EmiyaShirou/Aniamtions/Attack/0048.png" id="48_gsrlg"]
+[ext_resource type="Texture2D" uid="uid://iidab48yuook" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0048.png" id="48_iqytr"]
+[ext_resource type="Texture2D" uid="uid://dwynkj668j0jj" path="res://Resources/EmiyaShirou/Aniamtions/Attack/0049.png" id="49_7o1c0"]
+[ext_resource type="Texture2D" uid="uid://dt3tds3gowny2" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0049.png" id="49_158ka"]
+[ext_resource type="Texture2D" uid="uid://c8t646bv37mpu" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0050.png" id="50_cvrsd"]
+[ext_resource type="Texture2D" uid="uid://dypkunf8lgtgc" path="res://Resources/EmiyaShirou/Aniamtions/Attack/0050.png" id="50_v0n0a"]
+[ext_resource type="Texture2D" uid="uid://b3hv68bcitae1" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0051.png" id="51_2v6dc"]
+[ext_resource type="Texture2D" uid="uid://d2alf7703rydk" path="res://Resources/EmiyaShirou/Aniamtions/Attack/0051.png" id="51_x4bac"]
+[ext_resource type="Texture2D" uid="uid://cpryehqtlo3rp" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0052.png" id="52_gh3cb"]
+[ext_resource type="Texture2D" uid="uid://btcsv1x78aa5g" path="res://Resources/EmiyaShirou/Aniamtions/Attack/0052.png" id="52_mpb1h"]
+[ext_resource type="Texture2D" uid="uid://cqpkyyimpwdd4" path="res://Resources/EmiyaShirou/Aniamtions/Attack/0053.png" id="53_8a1ey"]
+[ext_resource type="Texture2D" uid="uid://coa1k3fiyjot3" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0053.png" id="53_j83e3"]
+[ext_resource type="Texture2D" uid="uid://cvoealbhljtpk" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0054.png" id="54_rss7q"]
+[ext_resource type="Texture2D" uid="uid://cstvhegoofilp" path="res://Resources/EmiyaShirou/Aniamtions/Attack/0054.png" id="54_uabe5"]
+[ext_resource type="Texture2D" uid="uid://bfajuf0rbyjf2" path="res://Resources/EmiyaShirou/Aniamtions/Attack/0055.png" id="55_ftvnq"]
+[ext_resource type="Texture2D" uid="uid://h6txbimpasnq" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0055.png" id="55_obfpg"]
+[ext_resource type="Texture2D" uid="uid://dvw1juywnveyb" path="res://Resources/EmiyaShirou/Aniamtions/Attack/0056.png" id="56_b6si0"]
+[ext_resource type="Texture2D" uid="uid://dub3ndi32cc2n" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0056.png" id="56_q3rlu"]
+[ext_resource type="Texture2D" uid="uid://yv6typ5xv3f0" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0057.png" id="57_n1t70"]
+[ext_resource type="Texture2D" uid="uid://d2jwoeoqhd67r" path="res://Resources/EmiyaShirou/Aniamtions/Attack/0057.png" id="57_ruasc"]
+[ext_resource type="Texture2D" uid="uid://cd6hjg2lbegg3" path="res://Resources/EmiyaShirou/Aniamtions/Attack/0058.png" id="58_1cpe8"]
+[ext_resource type="Texture2D" uid="uid://bu26xnc5xnvq0" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0058.png" id="58_4gidg"]
+[ext_resource type="Texture2D" uid="uid://b5rwq6j8vlg4v" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0059.png" id="59_5qbop"]
+[ext_resource type="Texture2D" uid="uid://bhnfvl0o74ia4" path="res://Resources/EmiyaShirou/Aniamtions/Attack/0059.png" id="59_e1uvr"]
+[ext_resource type="Texture2D" uid="uid://debmy202cae8l" path="res://Resources/EmiyaShirou/Aniamtions/Attack/0060.png" id="60_1gg8c"]
+[ext_resource type="Texture2D" uid="uid://btxxwmgtsv68x" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0060.png" id="60_1oijj"]
+[ext_resource type="Texture2D" uid="uid://cn00ardalbyny" path="res://Resources/EmiyaShirou/Aniamtions/Attack/0061.png" id="61_4eac0"]
+[ext_resource type="Texture2D" uid="uid://bmxwlq4nkav2x" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0061.png" id="61_y5nhn"]
+[ext_resource type="Texture2D" uid="uid://d1lxg878v8hyf" path="res://Resources/EmiyaShirou/Aniamtions/Attack/0062.png" id="62_e6g47"]
+[ext_resource type="Texture2D" uid="uid://bd4moebdc52dn" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0062.png" id="62_rqr2k"]
+[ext_resource type="Texture2D" uid="uid://cw4kew6bmw661" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0063.png" id="63_fn6wf"]
+[ext_resource type="Texture2D" uid="uid://xdcyuv50y1j4" path="res://Resources/EmiyaShirou/Aniamtions/Attack/0063.png" id="63_lob1s"]
+[ext_resource type="Texture2D" uid="uid://ccn2hqr53nqsf" path="res://Resources/EmiyaShirou/Aniamtions/Attack/0064.png" id="64_3miqf"]
+[ext_resource type="Texture2D" uid="uid://dtg8xqtyeyow2" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0064.png" id="64_tkjk0"]
+[ext_resource type="Texture2D" uid="uid://c03r0bodsllv5" path="res://Resources/EmiyaShirou/Aniamtions/Attack/0065.png" id="65_7x2t0"]
+[ext_resource type="Texture2D" uid="uid://bwg74uy3cxq66" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0065.png" id="65_xuas8"]
+[ext_resource type="Texture2D" uid="uid://bmdqvxgympcoy" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0066.png" id="66_gu3c3"]
+[ext_resource type="Texture2D" uid="uid://dmm0l6l1rt1v7" path="res://Resources/EmiyaShirou/Aniamtions/Attack/0066.png" id="66_hdti6"]
+[ext_resource type="Texture2D" uid="uid://drd6ht7ne1xy6" path="res://Resources/EmiyaShirou/Aniamtions/Attack/0067.png" id="67_enyy8"]
+[ext_resource type="Texture2D" uid="uid://bfjop27ot2vn8" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0067.png" id="67_rw7l1"]
+[ext_resource type="Texture2D" uid="uid://c288afsvdtbyk" path="res://Resources/EmiyaShirou/Aniamtions/Attack/0068.png" id="68_1v5t2"]
+[ext_resource type="Texture2D" uid="uid://b11qnee72ycyo" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0068.png" id="68_36c5c"]
+[ext_resource type="Texture2D" uid="uid://db6kbtikd1120" path="res://Resources/EmiyaShirou/Aniamtions/Attack/0069.png" id="69_by1p1"]
+[ext_resource type="Texture2D" uid="uid://dg4ylbr25peem" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0069.png" id="69_e8wig"]
+[ext_resource type="Texture2D" uid="uid://d0ik276j8rkp3" path="res://Resources/EmiyaShirou/Aniamtions/Attack/0070.png" id="70_3qbhj"]
+[ext_resource type="Texture2D" uid="uid://dmcqfq7ajmf5p" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0070.png" id="70_165b7"]
+[ext_resource type="Texture2D" uid="uid://dbg6g5ijt4cl" path="res://Resources/EmiyaShirou/Aniamtions/Attack/0071.png" id="71_000s2"]
+[ext_resource type="Texture2D" uid="uid://dkca4wd11q1u4" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0071.png" id="71_c6g0p"]
+[ext_resource type="Texture2D" uid="uid://lqjtk2mayywj" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0072.png" id="72_345kt"]
+[ext_resource type="Texture2D" uid="uid://cjmuff45k3ga0" path="res://Resources/EmiyaShirou/Aniamtions/Attack/0072.png" id="72_ajwnj"]
+[ext_resource type="Texture2D" uid="uid://dopx5r8ix4ah6" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0073.png" id="73_ygbai"]
+[ext_resource type="Texture2D" uid="uid://datslp2ujlb3k" path="res://Resources/EmiyaShirou/Aniamtions/Attack/0073.png" id="73_ysew2"]
+[ext_resource type="Texture2D" uid="uid://wdbtpqrlhpds" path="res://Resources/EmiyaShirou/Aniamtions/Attack/0074.png" id="74_cydgp"]
+[ext_resource type="Texture2D" uid="uid://cs0ud36w1nrqs" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0074.png" id="74_rfjwg"]
+[ext_resource type="Texture2D" uid="uid://dehisi5kum7m2" path="res://Resources/EmiyaShirou/Aniamtions/Attack/0075.png" id="75_ks1qf"]
+[ext_resource type="Texture2D" uid="uid://cf0g004mid5lt" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0075.png" id="75_wtahx"]
+[ext_resource type="Texture2D" uid="uid://ddt1ibtuisvq5" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0076.png" id="76_6e8km"]
+[ext_resource type="Texture2D" uid="uid://cyndwjoqgi47f" path="res://Resources/EmiyaShirou/Aniamtions/Attack/0076.png" id="76_ad6y7"]
+[ext_resource type="Texture2D" uid="uid://5y3bi2ynx5xj" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0077.png" id="77_ffthc"]
+[ext_resource type="Texture2D" uid="uid://b4ebcfkimgywv" path="res://Resources/EmiyaShirou/Aniamtions/Spell/0002.png" id="77_lfig5"]
+[ext_resource type="Texture2D" uid="uid://cgmbbft53mrlw" path="res://Resources/EmiyaShirou/Aniamtions/Spell/0001.png" id="78_37uee"]
+[ext_resource type="Texture2D" uid="uid://ua3utnse57at" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0078.png" id="78_jtwlk"]
+[ext_resource type="Texture2D" uid="uid://cm57ji2yhscan" path="res://Resources/EmiyaShirou/Aniamtions/Spell/0003.png" id="79_gu65l"]
+[ext_resource type="Texture2D" uid="uid://beyvmh2v73m65" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0079.png" id="79_uhi5a"]
+[ext_resource type="Texture2D" uid="uid://dq885u3lc30xw" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0080.png" id="80_i87sh"]
+[ext_resource type="Texture2D" uid="uid://dnklgdxcn2njs" path="res://Resources/EmiyaShirou/Aniamtions/Spell/0004.png" id="80_weyee"]
+[ext_resource type="Texture2D" uid="uid://cpkg8dqljhfp6" path="res://Resources/EmiyaShirou/Aniamtions/Spell/0005.png" id="81_f1vik"]
+[ext_resource type="Texture2D" uid="uid://tqhravtj2bvn" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0081.png" id="81_y0r8j"]
+[ext_resource type="Texture2D" uid="uid://ewk72uh14n6x" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0082.png" id="82_nh0a0"]
+[ext_resource type="Texture2D" uid="uid://1cuqhhujw8p5" path="res://Resources/EmiyaShirou/Aniamtions/Spell/0006.png" id="82_ql8m8"]
+[ext_resource type="Texture2D" uid="uid://dekv4l1bw8xqh" path="res://Resources/EmiyaShirou/Aniamtions/Spell/0007.png" id="83_67kr8"]
+[ext_resource type="Texture2D" uid="uid://b4p1wfc5nd4sf" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0083.png" id="83_w5prb"]
+[ext_resource type="Texture2D" uid="uid://ck4e4qnhgp85o" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0084.png" id="84_biur6"]
+[ext_resource type="Texture2D" uid="uid://3c4hw2oakf6d" path="res://Resources/EmiyaShirou/Aniamtions/Spell/0008.png" id="84_ka8nt"]
+[ext_resource type="Texture2D" uid="uid://cd4pon1q5vkum" path="res://Resources/EmiyaShirou/Aniamtions/Spell/0009.png" id="85_55gok"]
+[ext_resource type="Texture2D" uid="uid://bcnnphp7hqpa3" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0085.png" id="85_ikmx1"]
+[ext_resource type="Texture2D" uid="uid://m7ebrhghu5s8" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0086.png" id="86_b66y2"]
+[ext_resource type="Texture2D" uid="uid://dwtm4os88y53u" path="res://Resources/EmiyaShirou/Aniamtions/Spell/0010.png" id="86_mmipe"]
+[ext_resource type="Texture2D" uid="uid://cmqdkpti06svs" path="res://Resources/EmiyaShirou/Aniamtions/Spell/0011.png" id="87_5wak6"]
+[ext_resource type="Texture2D" uid="uid://b7ofphjb6h3xo" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0087.png" id="87_towdd"]
+[ext_resource type="Texture2D" uid="uid://dd3lda4kk42di" path="res://Resources/EmiyaShirou/Aniamtions/Spell/0012.png" id="88_181o4"]
+[ext_resource type="Texture2D" uid="uid://demxj4xqu3qwg" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0088.png" id="88_sfmtu"]
+[ext_resource type="Texture2D" uid="uid://ddm1k8db2o5nb" path="res://Resources/EmiyaShirou/Aniamtions/Spell/0013.png" id="89_ebdxb"]
+[ext_resource type="Texture2D" uid="uid://dbhit3ya8vjtb" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0089.png" id="89_r5tuv"]
+[ext_resource type="Texture2D" uid="uid://bncggqofyu562" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0090.png" id="90_juoor"]
+[ext_resource type="Texture2D" uid="uid://cpo1i6bwnx3hj" path="res://Resources/EmiyaShirou/Aniamtions/Spell/0014.png" id="90_pxx42"]
+[ext_resource type="Texture2D" uid="uid://bj314h3u64mwi" path="res://Resources/EmiyaShirou/Aniamtions/Spell/0015.png" id="91_kwxx6"]
+[ext_resource type="Texture2D" uid="uid://bdh5tyxw3ha13" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0091.png" id="91_l38qj"]
+[ext_resource type="Texture2D" uid="uid://cx8ffitlyrucw" path="res://Resources/EmiyaShirou/Aniamtions/Spell/0016.png" id="92_lv21l"]
+[ext_resource type="Texture2D" uid="uid://c1kdk3j5rqktx" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0092.png" id="92_yni8j"]
+[ext_resource type="Texture2D" uid="uid://bnqfnyu2ovgnq" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0093.png" id="93_5ghqc"]
+[ext_resource type="Texture2D" uid="uid://bb4he8hea7nqw" path="res://Resources/EmiyaShirou/Aniamtions/Spell/0017.png" id="93_l0rcf"]
+[ext_resource type="Texture2D" uid="uid://ba2kjjh5x8epe" path="res://Resources/EmiyaShirou/Aniamtions/Spell/0018.png" id="94_pcfp8"]
+[ext_resource type="Texture2D" uid="uid://00t1fshisdes" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0094.png" id="94_to07h"]
+[ext_resource type="Texture2D" uid="uid://crytxdfy0txf5" path="res://Resources/EmiyaShirou/Aniamtions/Spell/0019.png" id="95_2o1gd"]
+[ext_resource type="Texture2D" uid="uid://bgx46i32n6eg2" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0095.png" id="95_cxl2i"]
+[ext_resource type="Texture2D" uid="uid://b6lcis0e55rnm" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0096.png" id="96_p5aio"]
+[ext_resource type="Texture2D" uid="uid://c65f1tanlehga" path="res://Resources/EmiyaShirou/Aniamtions/Spell/0020.png" id="96_xxanm"]
+[ext_resource type="Texture2D" uid="uid://cj2lvioddis7r" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0097.png" id="97_7h8by"]
+[ext_resource type="Texture2D" uid="uid://f8mtlg8sbafr" path="res://Resources/EmiyaShirou/Aniamtions/Spell/0021.png" id="97_k8nrw"]
+[ext_resource type="Texture2D" uid="uid://bwv78cnmsptym" path="res://Resources/EmiyaShirou/Aniamtions/Spell/0022.png" id="98_qvve8"]
+[ext_resource type="Texture2D" uid="uid://c7clxeibkn4vh" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0098.png" id="98_vyrwp"]
+[ext_resource type="Texture2D" uid="uid://cuv4jmmjlfiey" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0099.png" id="99_5kmom"]
+[ext_resource type="Texture2D" uid="uid://cgiry1pn8talw" path="res://Resources/EmiyaShirou/Aniamtions/Spell/0023.png" id="99_p74rj"]
+[ext_resource type="Texture2D" uid="uid://ysekfyhud5yx" path="res://Resources/EmiyaShirou/Aniamtions/Spell/0024.png" id="100_8vy3v"]
+[ext_resource type="Texture2D" uid="uid://c078qjljb1fck" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0100.png" id="100_f0lmh"]
+[ext_resource type="Texture2D" uid="uid://cryp0yljl45pq" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0101.png" id="101_ewwwm"]
+[ext_resource type="Texture2D" uid="uid://cafcovq6ck03r" path="res://Resources/EmiyaShirou/Aniamtions/Spell/0025.png" id="101_pjwgc"]
+[ext_resource type="Texture2D" uid="uid://bi11grq7oqqfs" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0102.png" id="102_c1pdt"]
+[ext_resource type="Texture2D" uid="uid://s8ndt7twd2b1" path="res://Resources/EmiyaShirou/Aniamtions/Spell/0026.png" id="102_x48pj"]
+[ext_resource type="Texture2D" uid="uid://b5gf34l6o287q" path="res://Resources/EmiyaShirou/Aniamtions/Spell/0027.png" id="103_7gsfs"]
+[ext_resource type="Texture2D" uid="uid://bxtak7tnfthcg" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0103.png" id="103_82xh7"]
+[ext_resource type="Texture2D" uid="uid://c3hcxwjk4cao1" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0104.png" id="104_dg2wk"]
+[ext_resource type="Texture2D" uid="uid://dbppart22gxvg" path="res://Resources/EmiyaShirou/Aniamtions/Spell/0028.png" id="104_oprr4"]
+[ext_resource type="Texture2D" uid="uid://dqked8nyr4smo" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0105.png" id="105_gi51h"]
+[ext_resource type="Texture2D" uid="uid://bug1dtrvtq3mu" path="res://Resources/EmiyaShirou/Aniamtions/Spell/0029.png" id="105_pp0py"]
+[ext_resource type="Texture2D" uid="uid://bnusgovs350lf" path="res://Resources/EmiyaShirou/Aniamtions/Spell/0030.png" id="106_g7kqr"]
+[ext_resource type="Texture2D" uid="uid://dgbp7n2guse8k" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0106.png" id="106_loe8g"]
+[ext_resource type="Texture2D" uid="uid://cbcj3lgydy1xc" path="res://Resources/EmiyaShirou/Aniamtions/Spell/0031.png" id="107_hr7bs"]
+[ext_resource type="Texture2D" uid="uid://t23i6dcursti" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0107.png" id="107_kcmyo"]
+[ext_resource type="Texture2D" uid="uid://e3aoh8ij0c73" path="res://Resources/EmiyaShirou/Aniamtions/Spell/0032.png" id="108_5f6ng"]
+[ext_resource type="Texture2D" uid="uid://c1f2ev8ocsl1g" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0108.png" id="108_gwasa"]
+[ext_resource type="Texture2D" uid="uid://b1tn4o34x7fsl" path="res://Resources/EmiyaShirou/Aniamtions/Spell/0033.png" id="109_dmux8"]
+[ext_resource type="Texture2D" uid="uid://l7f45831v5ke" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0109.png" id="109_i350n"]
+[ext_resource type="Texture2D" uid="uid://b00i4gxwtbtrt" path="res://Resources/EmiyaShirou/Aniamtions/Spell/0034.png" id="110_bdjpj"]
+[ext_resource type="Texture2D" uid="uid://i5h0u0i0rvf3" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0110.png" id="110_jc2we"]
+[ext_resource type="Texture2D" uid="uid://br3ukdxmynmfo" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0111.png" id="111_25c7i"]
+[ext_resource type="Texture2D" uid="uid://cjr1a15vkkkth" path="res://Resources/EmiyaShirou/Aniamtions/Spell/0035.png" id="111_r3rxw"]
+[ext_resource type="Texture2D" uid="uid://kbaoooeqhc4q" path="res://Resources/EmiyaShirou/Aniamtions/Spell/0036.png" id="112_c51qv"]
+[ext_resource type="Texture2D" uid="uid://d4bitbb7d7bjd" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0112.png" id="112_xwgo2"]
+[ext_resource type="Texture2D" uid="uid://chegn3yq85dyd" path="res://Resources/EmiyaShirou/Aniamtions/Spell/0037.png" id="113_x82c3"]
+[ext_resource type="Texture2D" uid="uid://iody6w8v8j7v" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0113.png" id="113_xf10s"]
+[ext_resource type="Texture2D" uid="uid://1yomchjsdtof" path="res://Resources/EmiyaShirou/Aniamtions/Spell/0038.png" id="114_1e5tl"]
+[ext_resource type="Texture2D" uid="uid://c3nkglra7bpm5" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0114.png" id="114_ap5qd"]
+[ext_resource type="Texture2D" uid="uid://dk6mhjwxwbw4t" path="res://Resources/EmiyaShirou/Aniamtions/Spell/0039.png" id="115_0mes0"]
+[ext_resource type="Texture2D" uid="uid://dxon6ymhtikj6" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0115.png" id="115_63bpr"]
+[ext_resource type="Texture2D" uid="uid://bcv6vtgn8lge4" path="res://Resources/EmiyaShirou/Aniamtions/Spell/0040.png" id="116_djd8h"]
+[ext_resource type="Texture2D" uid="uid://ynwi7qqikhbj" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0116.png" id="116_wwv1p"]
+[ext_resource type="Texture2D" uid="uid://bxmstuxnx8hqs" path="res://Resources/EmiyaShirou/Aniamtions/Spell/0041.png" id="117_4suhu"]
+[ext_resource type="Texture2D" uid="uid://tvajbnbjet76" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0117.png" id="117_phn0k"]
+[ext_resource type="Texture2D" uid="uid://nslw33j5lmnu" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0118.png" id="118_hjevk"]
+[ext_resource type="Texture2D" uid="uid://osx8awwcm5an" path="res://Resources/EmiyaShirou/Aniamtions/Spell/0042.png" id="118_yncdi"]
+[ext_resource type="Texture2D" uid="uid://do356a4yr6p6q" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0119.png" id="119_gt2e5"]
+[ext_resource type="Texture2D" uid="uid://d01jenl8aes4x" path="res://Resources/EmiyaShirou/Aniamtions/Spell/0043.png" id="119_ocic6"]
+[ext_resource type="Texture2D" uid="uid://b7my3yvgohhea" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0120.png" id="120_b1005"]
+[ext_resource type="Texture2D" uid="uid://dgnlpnvy7vem0" path="res://Resources/EmiyaShirou/Aniamtions/Spell/0044.png" id="120_o1abc"]
+[ext_resource type="Texture2D" uid="uid://bj0mysg5cqyg4" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0121.png" id="121_0etfi"]
+[ext_resource type="Texture2D" uid="uid://cifrsvipomooo" path="res://Resources/EmiyaShirou/Aniamtions/Spell/0045.png" id="121_yt8vr"]
+[ext_resource type="Texture2D" uid="uid://bexhiho3kwlyl" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0122.png" id="122_an5m3"]
+[ext_resource type="Texture2D" uid="uid://b1wxld7umluqa" path="res://Resources/EmiyaShirou/Aniamtions/Spell/0046.png" id="122_j15y0"]
+[ext_resource type="Texture2D" uid="uid://cmmx8mx2qrepi" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0123.png" id="123_2nmac"]
+[ext_resource type="Texture2D" uid="uid://dvoxw1j3ap7ei" path="res://Resources/EmiyaShirou/Aniamtions/Spell/0047.png" id="123_4oi22"]
+[ext_resource type="Texture2D" uid="uid://8x1yrdnefg6q" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0124.png" id="124_4vryq"]
+[ext_resource type="Texture2D" uid="uid://mo35880byq1p" path="res://Resources/EmiyaShirou/Aniamtions/Spell/0048.png" id="124_sc0f6"]
+[ext_resource type="Texture2D" uid="uid://bja5p8f20yo84" path="res://Resources/EmiyaShirou/Aniamtions/Spell/0049.png" id="125_08ngy"]
+[ext_resource type="Texture2D" uid="uid://cquyugnikf7nd" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0125.png" id="125_wqnju"]
+[ext_resource type="Texture2D" uid="uid://p77brhiviak3" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0126.png" id="126_gwj73"]
+[ext_resource type="Texture2D" uid="uid://dnmkti1vs767p" path="res://Resources/EmiyaShirou/Aniamtions/Spell/0050.png" id="126_k48f7"]
+[ext_resource type="Texture2D" uid="uid://ffghi3l51p1m" path="res://Resources/EmiyaShirou/Aniamtions/Spell/0051.png" id="127_64eat"]
+[ext_resource type="Texture2D" uid="uid://b2sjtish3ixsr" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0127.png" id="127_x5vtd"]
+[ext_resource type="Texture2D" uid="uid://chi5cw515gmv8" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0128.png" id="128_0rrbt"]
+[ext_resource type="Texture2D" uid="uid://0elmb5b0sx1m" path="res://Resources/EmiyaShirou/Aniamtions/Spell/0052.png" id="128_2fbdk"]
+[ext_resource type="Texture2D" uid="uid://clatsf0k4j7r1" path="res://Resources/EmiyaShirou/Aniamtions/Spell/0053.png" id="129_tia0x"]
+[ext_resource type="Texture2D" uid="uid://c81bn1ting8fr" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0129.png" id="129_wwjx5"]
+[ext_resource type="Texture2D" uid="uid://chokghkeixkij" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0130.png" id="130_bhkmn"]
+[ext_resource type="Texture2D" uid="uid://drbudwv0wkt02" path="res://Resources/EmiyaShirou/Aniamtions/Spell/0054.png" id="130_smwvm"]
+[ext_resource type="Texture2D" uid="uid://ma5jq5to6wuu" path="res://Resources/EmiyaShirou/Aniamtions/Spell/0055.png" id="131_b08oe"]
+[ext_resource type="Texture2D" uid="uid://bhnuye0tlkh51" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0131.png" id="131_pi0ha"]
+[ext_resource type="Texture2D" uid="uid://dpkre14sf8quk" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0132.png" id="132_c2elk"]
+[ext_resource type="Texture2D" uid="uid://dxjfbk3ei6ilc" path="res://Resources/EmiyaShirou/Aniamtions/Spell/0056.png" id="132_f1s6c"]
+[ext_resource type="Texture2D" uid="uid://cke7ryq61crie" path="res://Resources/EmiyaShirou/Aniamtions/Spell/0057.png" id="133_0fswq"]
+[ext_resource type="Texture2D" uid="uid://i302m1hdjj0b" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0133.png" id="133_tkttg"]
+[ext_resource type="Texture2D" uid="uid://bj86xgxe7liha" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0134.png" id="134_2nkfv"]
+[ext_resource type="Texture2D" uid="uid://cjn14elpowcap" path="res://Resources/EmiyaShirou/Aniamtions/Spell/0058.png" id="134_r3mqs"]
+[ext_resource type="Texture2D" uid="uid://bpjevttug5pbc" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0135.png" id="135_ehcxt"]
+[ext_resource type="Texture2D" uid="uid://botuop7mxeff0" path="res://Resources/EmiyaShirou/Aniamtions/Spell/0059.png" id="135_g38ya"]
+[ext_resource type="Texture2D" uid="uid://cnceva7df3jwu" path="res://Resources/EmiyaShirou/Aniamtions/Spell/0060.png" id="136_88q4q"]
+[ext_resource type="Texture2D" uid="uid://dlotqir02vpfq" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0136.png" id="136_yp08v"]
+[ext_resource type="Texture2D" uid="uid://bl8v3lkrksog6" path="res://Resources/EmiyaShirou/Aniamtions/Spell/0061.png" id="137_8strm"]
+[ext_resource type="Texture2D" uid="uid://ivxbybc5hkgb" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0137.png" id="137_dcr7y"]
+[ext_resource type="Texture2D" uid="uid://diaxx6bqvulv6" path="res://Resources/EmiyaShirou/Aniamtions/Hit/0001.png" id="138_oc8na"]
+[ext_resource type="Texture2D" uid="uid://ny34cittcsqk" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0138.png" id="138_omkgw"]
+[ext_resource type="Texture2D" uid="uid://c0jneglrxtyl2" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0139.png" id="139_fioew"]
+[ext_resource type="Texture2D" uid="uid://cxyftef8y6ga3" path="res://Resources/EmiyaShirou/Aniamtions/Hit/0002.png" id="139_lhtyu"]
+[ext_resource type="Texture2D" uid="uid://dtjoa1wb4ibht" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0140.png" id="140_j1mkk"]
+[ext_resource type="Texture2D" uid="uid://08xrgo3vdtel" path="res://Resources/EmiyaShirou/Aniamtions/Hit/0003.png" id="140_my61m"]
+[ext_resource type="Texture2D" uid="uid://drcxogtfaqagj" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0141.png" id="141_6rlpm"]
+[ext_resource type="Texture2D" uid="uid://dln3yneoeaaxt" path="res://Resources/EmiyaShirou/Aniamtions/Hit/0004.png" id="141_8ktci"]
+[ext_resource type="Texture2D" uid="uid://cqgw2qd173cy6" path="res://Resources/EmiyaShirou/Aniamtions/Hit/0005.png" id="142_3t6pt"]
+[ext_resource type="Texture2D" uid="uid://bxay7my2o30wc" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0142.png" id="142_p1jme"]
+[ext_resource type="Texture2D" uid="uid://ctkd85cfn0qhf" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0143.png" id="143_5iyxv"]
+[ext_resource type="Texture2D" uid="uid://brvn2d6pbeor7" path="res://Resources/EmiyaShirou/Aniamtions/Hit/0006.png" id="143_shjcy"]
+[ext_resource type="Texture2D" uid="uid://dpidqiuc0j3xx" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0144.png" id="144_3w7uv"]
+[ext_resource type="Texture2D" uid="uid://tdryfdyhycry" path="res://Resources/EmiyaShirou/Aniamtions/Hit/0007.png" id="144_de14x"]
+[ext_resource type="Texture2D" uid="uid://cmlyijlvudtdf" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0145.png" id="145_4t4eh"]
+[ext_resource type="Texture2D" uid="uid://citchm0hbyvi0" path="res://Resources/EmiyaShirou/Aniamtions/Hit/0008.png" id="145_8k72p"]
+[ext_resource type="Texture2D" uid="uid://ci51rwpac4un8" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0146.png" id="146_ef4fy"]
+[ext_resource type="Texture2D" uid="uid://cjhm5y8jgn7s3" path="res://Resources/EmiyaShirou/Aniamtions/Hit/0009.png" id="146_x3e8c"]
+[ext_resource type="Texture2D" uid="uid://dwnn5ioxg1x85" path="res://Resources/EmiyaShirou/Aniamtions/Hit/0010.png" id="147_ws1gy"]
+[ext_resource type="Texture2D" uid="uid://bwb47jdgcck70" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0147.png" id="147_x0l6n"]
+[ext_resource type="Texture2D" uid="uid://be8efrmxx6rry" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0148.png" id="148_i2x64"]
+[ext_resource type="Texture2D" uid="uid://cdlhkeyy76o6o" path="res://Resources/EmiyaShirou/Aniamtions/Hit/0011.png" id="148_r8d1h"]
+[ext_resource type="Texture2D" uid="uid://cs7ms1l81melg" path="res://Resources/EmiyaShirou/Aniamtions/Hit/0012.png" id="149_7p742"]
+[ext_resource type="Texture2D" uid="uid://cjruismjgx1qx" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0149.png" id="149_a8yp5"]
+[ext_resource type="Texture2D" uid="uid://byaydxs6a2f3p" path="res://Resources/EmiyaShirou/Aniamtions/Hit/0013.png" id="150_62e2v"]
+[ext_resource type="Texture2D" uid="uid://brp4s3hx54b8p" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0150.png" id="150_tq4vy"]
+[ext_resource type="Texture2D" uid="uid://c4u3w13qdqxej" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0151.png" id="151_6ru5x"]
+[ext_resource type="Texture2D" uid="uid://ciurj52pnflqg" path="res://Resources/EmiyaShirou/Aniamtions/Hit/0014.png" id="151_8beq1"]
+[ext_resource type="Texture2D" uid="uid://b8ei78g70o40t" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0152.png" id="152_bvx05"]
+[ext_resource type="Texture2D" uid="uid://cnv1bh1pguoxl" path="res://Resources/EmiyaShirou/Aniamtions/Hit/0015.png" id="152_vnxgd"]
+[ext_resource type="Texture2D" uid="uid://7vil0yc4u0f5" path="res://Resources/EmiyaShirou/Aniamtions/Hit/0016.png" id="153_3cn6b"]
+[ext_resource type="Texture2D" uid="uid://cy787gt4q7u3r" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0153.png" id="153_pnjxe"]
+[ext_resource type="Texture2D" uid="uid://b71ss34s4owty" path="res://Resources/EmiyaShirou/Aniamtions/Hit/0017.png" id="154_5rtfx"]
+[ext_resource type="Texture2D" uid="uid://ciod1vjh428af" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0154.png" id="154_g318k"]
+[ext_resource type="Texture2D" uid="uid://b3qpe1iy5ukm5" path="res://Resources/EmiyaShirou/Aniamtions/Hit/0018.png" id="155_6rlks"]
+[ext_resource type="Texture2D" uid="uid://dleaymbfbq8r5" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0155.png" id="155_nn18f"]
+[ext_resource type="Texture2D" uid="uid://chilllacbku4n" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0156.png" id="156_w1byx"]
+[ext_resource type="Texture2D" uid="uid://budhieqjoi5al" path="res://Resources/EmiyaShirou/Aniamtions/Idle/0157.png" id="157_yas3y"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_x4rt0"]
+animations = [{
+"frames": [{
+"duration": 0.5,
+"texture": ExtResource("10_l1581")
+}, {
+"duration": 0.5,
+"texture": ExtResource("11_7bmpf")
+}, {
+"duration": 0.5,
+"texture": ExtResource("12_ejylc")
+}, {
+"duration": 0.5,
+"texture": ExtResource("13_u3p8s")
+}, {
+"duration": 0.5,
+"texture": ExtResource("14_qodkt")
+}, {
+"duration": 0.5,
+"texture": ExtResource("15_468nt")
+}, {
+"duration": 0.5,
+"texture": ExtResource("16_sbfcr")
+}, {
+"duration": 0.5,
+"texture": ExtResource("17_xnueo")
+}, {
+"duration": 0.5,
+"texture": ExtResource("18_pm32a")
+}, {
+"duration": 0.5,
+"texture": ExtResource("19_4lih0")
+}, {
+"duration": 0.5,
+"texture": ExtResource("20_5u40b")
+}, {
+"duration": 0.5,
+"texture": ExtResource("21_35k6f")
+}, {
+"duration": 0.5,
+"texture": ExtResource("22_txr3g")
+}, {
+"duration": 0.5,
+"texture": ExtResource("23_7m2dk")
+}, {
+"duration": 0.5,
+"texture": ExtResource("24_4ch5v")
+}, {
+"duration": 0.5,
+"texture": ExtResource("25_cf5mu")
+}, {
+"duration": 0.5,
+"texture": ExtResource("26_67v36")
+}, {
+"duration": 0.5,
+"texture": ExtResource("27_1q0eo")
+}, {
+"duration": 0.5,
+"texture": ExtResource("28_hd6nc")
+}, {
+"duration": 0.5,
+"texture": ExtResource("29_xh6ox")
+}, {
+"duration": 0.5,
+"texture": ExtResource("30_26307")
+}, {
+"duration": 0.5,
+"texture": ExtResource("31_1ge51")
+}, {
+"duration": 0.5,
+"texture": ExtResource("32_xf5qi")
+}, {
+"duration": 0.5,
+"texture": ExtResource("33_rn7ix")
+}, {
+"duration": 0.5,
+"texture": ExtResource("34_b0yb1")
+}, {
+"duration": 0.5,
+"texture": ExtResource("35_1tccc")
+}, {
+"duration": 0.5,
+"texture": ExtResource("36_pb5rl")
+}, {
+"duration": 0.5,
+"texture": ExtResource("37_pfd8t")
+}, {
+"duration": 0.5,
+"texture": ExtResource("38_i8g30")
+}, {
+"duration": 0.5,
+"texture": ExtResource("39_fkbnw")
+}, {
+"duration": 0.5,
+"texture": ExtResource("40_llnli")
+}, {
+"duration": 0.5,
+"texture": ExtResource("41_o55jt")
+}, {
+"duration": 0.5,
+"texture": ExtResource("42_nmg7c")
+}, {
+"duration": 0.5,
+"texture": ExtResource("43_xpylv")
+}, {
+"duration": 0.5,
+"texture": ExtResource("44_26bbx")
+}, {
+"duration": 0.5,
+"texture": ExtResource("45_pc7ww")
+}, {
+"duration": 0.5,
+"texture": ExtResource("46_bmmxy")
+}, {
+"duration": 0.5,
+"texture": ExtResource("47_325to")
+}, {
+"duration": 0.5,
+"texture": ExtResource("48_gsrlg")
+}, {
+"duration": 0.5,
+"texture": ExtResource("49_7o1c0")
+}, {
+"duration": 0.5,
+"texture": ExtResource("50_v0n0a")
+}, {
+"duration": 0.5,
+"texture": ExtResource("51_x4bac")
+}, {
+"duration": 0.5,
+"texture": ExtResource("52_mpb1h")
+}, {
+"duration": 0.5,
+"texture": ExtResource("53_8a1ey")
+}, {
+"duration": 0.5,
+"texture": ExtResource("54_uabe5")
+}, {
+"duration": 0.5,
+"texture": ExtResource("55_ftvnq")
+}, {
+"duration": 0.5,
+"texture": ExtResource("56_b6si0")
+}, {
+"duration": 0.5,
+"texture": ExtResource("57_ruasc")
+}, {
+"duration": 0.5,
+"texture": ExtResource("58_1cpe8")
+}, {
+"duration": 0.5,
+"texture": ExtResource("59_e1uvr")
+}, {
+"duration": 0.5,
+"texture": ExtResource("60_1gg8c")
+}, {
+"duration": 0.5,
+"texture": ExtResource("61_4eac0")
+}, {
+"duration": 0.5,
+"texture": ExtResource("62_e6g47")
+}, {
+"duration": 0.5,
+"texture": ExtResource("63_lob1s")
+}, {
+"duration": 0.5,
+"texture": ExtResource("64_3miqf")
+}, {
+"duration": 0.5,
+"texture": ExtResource("65_7x2t0")
+}, {
+"duration": 0.5,
+"texture": ExtResource("66_hdti6")
+}, {
+"duration": 0.5,
+"texture": ExtResource("67_enyy8")
+}, {
+"duration": 0.5,
+"texture": ExtResource("68_1v5t2")
+}, {
+"duration": 0.5,
+"texture": ExtResource("69_by1p1")
+}, {
+"duration": 0.5,
+"texture": ExtResource("70_3qbhj")
+}, {
+"duration": 0.5,
+"texture": ExtResource("71_000s2")
+}, {
+"duration": 0.5,
+"texture": ExtResource("72_ajwnj")
+}, {
+"duration": 0.5,
+"texture": ExtResource("73_ysew2")
+}, {
+"duration": 0.5,
+"texture": ExtResource("74_cydgp")
+}, {
+"duration": 0.5,
+"texture": ExtResource("75_ks1qf")
+}, {
+"duration": 0.5,
+"texture": ExtResource("76_ad6y7")
+}],
+"loop": false,
+"name": &"Attack",
+"speed": 30.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("77_lfig5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("78_37uee")
+}, {
+"duration": 1.0,
+"texture": ExtResource("79_gu65l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("80_weyee")
+}, {
+"duration": 1.0,
+"texture": ExtResource("81_f1vik")
+}, {
+"duration": 1.0,
+"texture": ExtResource("82_ql8m8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("83_67kr8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("84_ka8nt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("85_55gok")
+}, {
+"duration": 1.0,
+"texture": ExtResource("86_mmipe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("87_5wak6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("88_181o4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("89_ebdxb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("90_pxx42")
+}, {
+"duration": 1.0,
+"texture": ExtResource("91_kwxx6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("92_lv21l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("93_l0rcf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("94_pcfp8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("95_2o1gd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("96_xxanm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("97_k8nrw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("98_qvve8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("99_p74rj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("100_8vy3v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("101_pjwgc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("102_x48pj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("103_7gsfs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("104_oprr4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("105_pp0py")
+}, {
+"duration": 1.0,
+"texture": ExtResource("106_g7kqr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("107_hr7bs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("108_5f6ng")
+}, {
+"duration": 1.0,
+"texture": ExtResource("109_dmux8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("110_bdjpj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("111_r3rxw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("112_c51qv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("113_x82c3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("114_1e5tl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("115_0mes0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("116_djd8h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("117_4suhu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("118_yncdi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("119_ocic6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("120_o1abc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("121_yt8vr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("122_j15y0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("123_4oi22")
+}, {
+"duration": 1.0,
+"texture": ExtResource("124_sc0f6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("125_08ngy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("126_k48f7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("127_64eat")
+}, {
+"duration": 1.0,
+"texture": ExtResource("128_2fbdk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("129_tia0x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("130_smwvm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("131_b08oe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("132_f1s6c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("133_0fswq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("134_r3mqs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("135_g38ya")
+}, {
+"duration": 1.0,
+"texture": ExtResource("136_88q4q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("137_8strm")
+}],
+"loop": false,
+"name": &"Cast",
+"speed": 30.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("138_oc8na")
+}, {
+"duration": 1.0,
+"texture": ExtResource("139_lhtyu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("140_my61m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("141_8ktci")
+}, {
+"duration": 1.0,
+"texture": ExtResource("142_3t6pt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("143_shjcy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("144_de14x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("145_8k72p")
+}],
+"loop": false,
+"name": &"Die",
+"speed": 24.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("138_oc8na")
+}, {
+"duration": 1.0,
+"texture": ExtResource("139_lhtyu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("140_my61m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("141_8ktci")
+}, {
+"duration": 1.0,
+"texture": ExtResource("142_3t6pt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("143_shjcy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("144_de14x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("145_8k72p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("146_x3e8c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("147_ws1gy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("148_r8d1h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("149_7p742")
+}, {
+"duration": 1.0,
+"texture": ExtResource("150_62e2v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("151_8beq1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("152_vnxgd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("153_3cn6b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("154_5rtfx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("155_6rlks")
+}],
+"loop": false,
+"name": &"Hit",
+"speed": 30.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_ccoet")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_cc4wl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_3stpl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_m2gym")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_20y6e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_xp64a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_oj88y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_lls30")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_3fn4r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_ccoet")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_cc4wl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_3stpl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_m2gym")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_20y6e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_xp64a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_oj88y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_lls30")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_3fn4r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_tn141")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_p5nas")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_0oxfg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_p3xb1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_pe11u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_2y4dr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_0r1vq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_7virj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_lxpay")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_igk67")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_avp04")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_aw1fp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_dq633")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_7u6rj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_47ouo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_n1eta")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_armtv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_rfuo8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_xvko4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_y7dkd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_107df")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_2fgxm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_atojp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_2i751")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_55r1v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_rdvh8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_reym2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_68xww")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_d6v56")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_f68nd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_gvgm8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_glneg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_kvl6v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_r5w67")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_gu7et")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_qgbyc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_02ms7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_waw3i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_iqytr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_158ka")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_cvrsd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_2v6dc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_gh3cb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_j83e3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_rss7q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_obfpg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_q3rlu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_n1t70")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_4gidg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_5qbop")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_1oijj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_y5nhn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_rqr2k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_fn6wf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_tkjk0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_xuas8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66_gu3c3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("67_rw7l1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("68_36c5c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("69_e8wig")
+}, {
+"duration": 1.0,
+"texture": ExtResource("70_165b7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("71_c6g0p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("72_345kt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("73_ygbai")
+}, {
+"duration": 1.0,
+"texture": ExtResource("74_rfjwg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("75_wtahx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("76_6e8km")
+}, {
+"duration": 1.0,
+"texture": ExtResource("77_ffthc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("78_jtwlk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("79_uhi5a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("80_i87sh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("81_y0r8j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("82_nh0a0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("83_w5prb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("84_biur6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("85_ikmx1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("86_b66y2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("87_towdd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("88_sfmtu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("89_r5tuv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("90_juoor")
+}, {
+"duration": 1.0,
+"texture": ExtResource("91_l38qj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("92_yni8j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("93_5ghqc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("94_to07h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("95_cxl2i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("96_p5aio")
+}, {
+"duration": 1.0,
+"texture": ExtResource("97_7h8by")
+}, {
+"duration": 1.0,
+"texture": ExtResource("98_vyrwp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("99_5kmom")
+}, {
+"duration": 1.0,
+"texture": ExtResource("100_f0lmh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("101_ewwwm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("102_c1pdt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("103_82xh7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("104_dg2wk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("105_gi51h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("106_loe8g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("107_kcmyo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("108_gwasa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("109_i350n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("110_jc2we")
+}, {
+"duration": 1.0,
+"texture": ExtResource("111_25c7i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("112_xwgo2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("113_xf10s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("114_ap5qd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("115_63bpr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("116_wwv1p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("117_phn0k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("118_hjevk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("119_gt2e5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("120_b1005")
+}, {
+"duration": 1.0,
+"texture": ExtResource("121_0etfi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("122_an5m3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("123_2nmac")
+}, {
+"duration": 1.0,
+"texture": ExtResource("124_4vryq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("125_wqnju")
+}, {
+"duration": 1.0,
+"texture": ExtResource("126_gwj73")
+}, {
+"duration": 1.0,
+"texture": ExtResource("127_x5vtd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("128_0rrbt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("129_wwjx5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("130_bhkmn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("131_pi0ha")
+}, {
+"duration": 1.0,
+"texture": ExtResource("132_c2elk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("133_tkttg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("134_2nkfv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("135_ehcxt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("136_yp08v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("137_dcr7y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("138_omkgw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("139_fioew")
+}, {
+"duration": 1.0,
+"texture": ExtResource("140_j1mkk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("141_6rlpm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("142_p1jme")
+}, {
+"duration": 1.0,
+"texture": ExtResource("143_5iyxv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("144_3w7uv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("145_4t4eh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("146_ef4fy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("147_x0l6n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("148_i2x64")
+}, {
+"duration": 1.0,
+"texture": ExtResource("149_a8yp5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("150_tq4vy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("151_6ru5x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("152_bvx05")
+}, {
+"duration": 1.0,
+"texture": ExtResource("153_pnjxe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("154_g318k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("155_nn18f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("156_w1byx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("157_yas3y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_tn141")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_p5nas")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_0oxfg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_p3xb1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_pe11u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_2y4dr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_0r1vq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_7virj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_lxpay")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_igk67")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_avp04")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_aw1fp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_dq633")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_7u6rj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_47ouo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_n1eta")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_armtv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_rfuo8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_xvko4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_y7dkd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_107df")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_2fgxm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_atojp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_2i751")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_55r1v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_rdvh8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_reym2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_68xww")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_d6v56")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_f68nd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_gvgm8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_glneg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_kvl6v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_r5w67")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_gu7et")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_qgbyc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_02ms7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_waw3i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_iqytr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_158ka")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_cvrsd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_2v6dc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_gh3cb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_j83e3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_rss7q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_obfpg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_q3rlu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_n1t70")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_4gidg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_5qbop")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_1oijj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_y5nhn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_rqr2k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_fn6wf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_tkjk0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_xuas8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66_gu3c3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("67_rw7l1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("68_36c5c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("69_e8wig")
+}, {
+"duration": 1.0,
+"texture": ExtResource("70_165b7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("71_c6g0p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("72_345kt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("73_ygbai")
+}, {
+"duration": 1.0,
+"texture": ExtResource("74_rfjwg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("75_wtahx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("76_6e8km")
+}, {
+"duration": 1.0,
+"texture": ExtResource("77_ffthc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("78_jtwlk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("79_uhi5a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("80_i87sh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("81_y0r8j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("82_nh0a0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("83_w5prb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("84_biur6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("85_ikmx1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("86_b66y2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("87_towdd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("88_sfmtu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("89_r5tuv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("90_juoor")
+}, {
+"duration": 1.0,
+"texture": ExtResource("91_l38qj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("92_yni8j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("93_5ghqc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("94_to07h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("95_cxl2i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("96_p5aio")
+}, {
+"duration": 1.0,
+"texture": ExtResource("97_7h8by")
+}, {
+"duration": 1.0,
+"texture": ExtResource("98_vyrwp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("99_5kmom")
+}, {
+"duration": 1.0,
+"texture": ExtResource("100_f0lmh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("101_ewwwm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("102_c1pdt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("103_82xh7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("104_dg2wk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("105_gi51h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("106_loe8g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("107_kcmyo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("108_gwasa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("109_i350n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("110_jc2we")
+}, {
+"duration": 1.0,
+"texture": ExtResource("111_25c7i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("112_xwgo2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("113_xf10s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("114_ap5qd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("115_63bpr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("116_wwv1p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("117_phn0k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("118_hjevk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("119_gt2e5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("120_b1005")
+}, {
+"duration": 1.0,
+"texture": ExtResource("121_0etfi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("122_an5m3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("123_2nmac")
+}, {
+"duration": 1.0,
+"texture": ExtResource("124_4vryq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("125_wqnju")
+}, {
+"duration": 1.0,
+"texture": ExtResource("126_gwj73")
+}, {
+"duration": 1.0,
+"texture": ExtResource("127_x5vtd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("128_0rrbt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("129_wwjx5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("130_bhkmn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("131_pi0ha")
+}, {
+"duration": 1.0,
+"texture": ExtResource("132_c2elk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("133_tkttg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("134_2nkfv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("135_ehcxt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("136_yp08v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("137_dcr7y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("138_omkgw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("139_fioew")
+}, {
+"duration": 1.0,
+"texture": ExtResource("140_j1mkk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("141_6rlpm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("142_p1jme")
+}, {
+"duration": 1.0,
+"texture": ExtResource("143_5iyxv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("144_3w7uv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("145_4t4eh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("146_ef4fy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("147_x0l6n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("148_i2x64")
+}, {
+"duration": 1.0,
+"texture": ExtResource("149_a8yp5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("150_tq4vy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("151_6ru5x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("152_bvx05")
+}, {
+"duration": 1.0,
+"texture": ExtResource("153_pnjxe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("154_g318k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("155_nn18f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("156_w1byx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("157_yas3y")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 30.0
+}]
+
+[node name="EmiyaShirou" type="Node2D"]
+
+[node name="Visuals" type="AnimatedSprite2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(0, -170)
+scale = Vector2(0.3, 0.3)
+sprite_frames = SubResource("SpriteFrames_x4rt0")
+animation = &"Attack"
+frame = 66
+frame_progress = 1.0
+
+[node name="Bounds" type="Control" parent="."]
+unique_name_in_owner = true
+layout_mode = 3
+anchors_preset = 0
+offset_left = -100.0
+offset_top = -240.0
+offset_right = 100.0
+
+[node name="IntentPos" type="Marker2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(0, -259)
+
+[node name="CenterPos" type="Marker2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(0, -120)
+
+[node name="TalkPos" type="Marker2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(20, -240)

@@ -60,7 +60,8 @@ public class BattleArmaments : EmiyaCardNode
 		// 	}
 		// 	return;
 		// }
-		CardModel cardModel = await CardSelectCmd.FromHandForUpgrade(choiceContext, base.Owner, this);
+		CardModel cardModel = await EmiyaCardSelectCmd.FromHandForUpgradeAndEnchant(
+            choiceContext, base.Owner, this);
 		if (cardModel != null)
 		{
 			CardCmd.Upgrade(cardModel);

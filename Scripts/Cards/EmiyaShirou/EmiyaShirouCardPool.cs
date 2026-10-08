@@ -41,7 +41,7 @@ public class EmiyaShirouCardPool : TypeListCardPoolModel, IModColorfulPhilosophe
     
     // 根据你使用的卡框决定使用哪个Material
     private static readonly Material? _poolFrameMaterial =
-        MaterialUtils.CreateReplaceHueShaderMaterial(0.5f, 0.5f, 1f);
+        MaterialUtils.CreateReplaceHueShaderMaterial(1f, 0.2f, 0f);
          // 如果你使用原版卡框，使用这个直接替换色调。
     
     // private static readonly Material? _poolFrameMaterial =

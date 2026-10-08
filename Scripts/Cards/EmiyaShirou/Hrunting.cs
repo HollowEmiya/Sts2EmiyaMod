@@ -50,7 +50,6 @@ public class Hrunting : EmiyaCardNode
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
-        
 		ArgumentNullException.ThrowIfNull(cardPlay.Target, "cardPlay.Target");
         await CreatureCmd.LoseBlock(choiceContext, cardPlay.Target, 
             cardPlay.Target.Block,

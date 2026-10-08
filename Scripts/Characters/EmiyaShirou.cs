@@ -22,9 +22,9 @@ public class EmiyaShirouCharacter :
 
     /// <summary>
     /// 能量图标轮廓颜色
-    /// #860000
+    /// #AD3318
     /// </summary>
-    public override Color EnergyLabelOutlineColor => new Color("860000");
+    public override Color EnergyLabelOutlineColor => new Color("AD3318");
 
     /// <summary>
     /// 地图绘制颜色
@@ -77,10 +77,10 @@ public class EmiyaShirouCharacter :
                     "res://Resources/EmiyaShirou/Scenes/EmiyaShirou_Bg.tscn",
                 // 人物选择图标。
                 CharacterSelectIconPath: 
-                    "res://Resources/EmiyaShirou/Scenes/EmiyaShirouSelected.png",
+                    "res://Resources/EmiyaShirou/Images/EmiyaShirouSelected.png",
                 // 人物选择图标-锁定状态。
                 CharacterSelectLockedIconPath:
-                    "res://Resources/EmiyaShirou/Scenes/EmiyaShirouSelectedLocked.png",
+                    "res://Resources/EmiyaShirou/Images/EmiyaShirouSelectedLocked.png",
                 // 人物选择过渡动画。
                 // CharacterSelectTransitionPath: "res://materials/transitions/ironclad_transition_mat.tres",
                 // 地图上的角色标记图标、表情轮盘上的角色头像。

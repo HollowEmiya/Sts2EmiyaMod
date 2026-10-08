@@ -1,7 +1,9 @@
+using HarmonyLib;
 using MegaCrit.Sts2.Core.CardSelection;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.CardPools;
@@ -28,9 +30,14 @@ public class TraceMagecraft : ModCardTemplate
     );
 
     protected override IEnumerable<DynamicVar> CanonicalVars => [
-        new BlockVar(5, ValueProp.Move)
+        new BlockVar(5, ValueProp.Move),
+        new IntVar("TraceDefect", 2m)
     ];
 
+    protected override IEnumerable<IHoverTip> AdditionalHoverTips => [
+        HoverTipFactory.FromKeyword(EmiyaKeywords.Trace)
+    ];
+    
     public TraceMagecraft() : base(energyCost, type, rarity, targetType, shouldShowInCardLibrary)
     {
         
@@ -42,28 +49,19 @@ public class TraceMagecraft : ModCardTemplate
         CardModel selection = (await CardSelectCmd.FromHand(prefs: new CardSelectorPrefs(base.SelectionScreenPrompt, 1), context: choiceContext, player: base.Owner, filter: delegate(CardModel c)
 		{
 			CardType type = c.Type;
-			return (type == CardType.Attack || type == CardType.Power || type == CardType.Skill) ? true : false;
+			return (type == CardType.Attack 
+                || type == CardType.Power 
+                || type == CardType.Skill) ? true : false;
 		}, source: this)).FirstOrDefault();
         if (selection != null)
         {
             CardModel card = selection.CreateClone();
-            ApplyCopiedCardStatReduction(card);
-            CardCmd.ApplyKeyword(card, TraceKeyword.Trace);
+            EmiyaCardUtils.ApplyCopiedCardDamageAndBlockReduction(
+                card, DynamicVars["TraceDefect"].IntValue);
+            CardCmd.ApplyKeyword(card, EmiyaKeywords.Trace);
+            card.Tags.AddItem(EmiyaTags.Trace);
             card.EnergyCost.AddThisCombat(-1);
             await CardPileCmd.AddGeneratedCardToCombat(card, PileType.Hand, base.Owner);
-        }
-    }
-
-    private static void ApplyCopiedCardStatReduction(CardModel card)
-    {
-        if (card.DynamicVars.TryGetValue("Damage", out DynamicVar? damageVar))
-        {
-            damageVar.BaseValue = Math.Max(0m, damageVar.BaseValue - 2m);
-        }
-
-        if (card.DynamicVars.TryGetValue("Block", out DynamicVar? blockVar))
-        {
-            blockVar.BaseValue = Math.Max(0m, blockVar.BaseValue - 2m);
         }
     }
 

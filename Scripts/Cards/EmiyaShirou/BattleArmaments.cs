@@ -38,6 +38,9 @@ public class BattleArmaments : EmiyaCardNode
         new DamageVar(8, ValueProp.Move)
     ];
 
+    protected override IEnumerable<IHoverTip> AdditionalHoverTips =>
+        HoverTipFactory.FromEnchantment<Reinforcement>(2);
+
     public BattleArmaments()  :
         base(energyCost, type, rarity, targetType, shouldShowInCardLibrary)
     {

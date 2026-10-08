@@ -15,7 +15,7 @@ namespace Sts2EmiyaMod.Scripts;
 public class Reinforcement : ModEnchantmentTemplate
 {
     // 是否在卡牌上显示数值
-    // public override bool ShowAmount => true;
+    public override bool ShowAmount => true;
 
     // 是否会添加额外的卡牌描述文本
     public override bool HasExtraCardText => true;

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b0gn6h1s77qac"
-path="res://.godot/imported/ManaLoading.png-12517e16711d192c9080ff100420bf03.ctex"
+uid="uid://fujalvdj4el4"
+path="res://.godot/imported/DefendEmiyaShirou.png-387823644f70916664ce7f8855f51b08.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sts2EmiyaMod/Images/Cards/EmiyaShirou/ManaLoading.png"
-dest_files=["res://.godot/imported/ManaLoading.png-12517e16711d192c9080ff100420bf03.ctex"]
+source_file="res://Sts2EmiyaMod/Images/Cards/EmiyaShirou/DefendEmiyaShirou.png"
+dest_files=["res://.godot/imported/DefendEmiyaShirou.png-387823644f70916664ce7f8855f51b08.ctex"]
 
 [params]
 

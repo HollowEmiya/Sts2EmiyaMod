@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cvmq3nllm68xd"
-path="res://.godot/imported/EmiyaShirouStrike-.png-d87e38ce5b0b2e6c3c4775bd9d938781.ctex"
+uid="uid://dvedf22lv3tfu"
+path="res://.godot/imported/EmiyaYinSword.png-1a3da37e9102dda9a86932a467cde9b5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sts2EmiyaMod/Images/Cards/EmiyaShirou/EmiyaShirouStrike-.png"
-dest_files=["res://.godot/imported/EmiyaShirouStrike-.png-d87e38ce5b0b2e6c3c4775bd9d938781.ctex"]
+source_file="res://Sts2EmiyaMod/Images/Cards/EmiyaShirou/EmiyaYinSword.png"
+dest_files=["res://.godot/imported/EmiyaYinSword.png-1a3da37e9102dda9a86932a467cde9b5.ctex"]
 
 [params]
 

@@ -34,14 +34,14 @@ public class EmiyaShirouCardPool : TypeListCardPoolModel, IModColorfulPhilosophe
 
     /// <summary>
     /// 能量盘文字轮廓颜色
-    /// #860000
+    /// #AD3318
     /// </summary>
-    public override Color EnergyOutlineColor => new Color("860000");
+    public override Color EnergyOutlineColor => new Color("AD3318");
 
     
     // 根据你使用的卡框决定使用哪个Material
     private static readonly Material? _poolFrameMaterial =
-        MaterialUtils.CreateReplaceHueShaderMaterial(0.5f, 0.5f, 1f);
+        MaterialUtils.CreateReplaceHueShaderMaterial(1f, 0.2f, 0f);
          // 如果你使用原版卡框，使用这个直接替换色调。
     
     // private static readonly Material? _poolFrameMaterial =

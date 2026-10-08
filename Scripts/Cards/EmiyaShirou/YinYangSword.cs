@@ -9,21 +9,13 @@ using STS2RitsuLib.Interop.AutoRegistration;
 
 namespace Sts2EmiyaMod.Scripts;
 
-[RegisterCard(typeof(EmiyaShirouCardPool))]
-// 注册成人物起始卡，后面是数量。不需要删除即可。
-[RegisterCharacterStarterCard(typeof(EmiyaShirouCharacter), 1)]
 /// <summary>
-/// 弓道 
-/// 0费，造成4点伤害，施加1层易伤。  
-/// 升级后造成6点，施加2层易伤。
+/// 阴阳剑：0费，<u>攻击</u>，阳：造成3点伤害施加1层虚弱，打出后切换为阴：造成3点伤害施加1层易伤。  
+///   升级后造成6点，2层。
 /// </summary>
-public class Kyudo : EmiyaCardNode
+[RegisterCard(typeof(EmiyaShirouCardPool))]
+public class YinYangSword : EmiyaCardNode
 {
-    public override bool GainsBlock => false;
-    
-    /// <summary>
-    /// 基础耗能    
-    /// </summary>;
     public const int energyCost = 0;
 
     private const CardType type = CardType.Attack;
@@ -36,15 +28,19 @@ public class Kyudo : EmiyaCardNode
     private const bool shouldShowInCardLibrary = true;
 
     protected override IEnumerable<DynamicVar> CanonicalVars => [
-        new DamageVar(4, ValueProp.Move),
-        new PowerVar<VulnerablePower>(1m)
+        new DamageVar(3, ValueProp.Move),
+        new PowerVar<VulnerablePower>(1m),
+		new PowerVar<WeakPower>(1m)
     ];
 
     protected override IEnumerable<IHoverTip> AdditionalHoverTips => [
-        HoverTipFactory.FromPower<VulnerablePower>()
+        HoverTipFactory.FromPower<VulnerablePower>(),
+        HoverTipFactory.FromPower<WeakPower>(),
     ];
 
-    public Kyudo() :
+    public bool Yang = true;
+
+    public YinYangSword() :
         base(energyCost, type, rarity, targetType, shouldShowInCardLibrary)
     {
         
@@ -59,14 +55,23 @@ public class Kyudo : EmiyaCardNode
             .Targeting(cardPlay.Target!)
             .WithHitFx("vfx/vfx_dramatic_stab", null, "blunt_attack.mp3")
             .Execute(choiceContext);
-
-        await PowerCmd.Apply<VulnerablePower>(choiceContext, cardPlay.Target, 
-            base.DynamicVars.Vulnerable.BaseValue, base.Owner.Creature, this);
+        if(Yang)
+        {
+            await PowerCmd.Apply<VulnerablePower>(choiceContext, cardPlay.Target, 
+                base.DynamicVars.Vulnerable.BaseValue, base.Owner.Creature, this);
+        }
+        else
+        {
+            await PowerCmd.Apply<WeakPower>(choiceContext, cardPlay.Target, 
+                base.DynamicVars.Weak.BaseValue, base.Owner.Creature, this);
+        }
+        Yang = !Yang;
     }
     
     protected override void OnUpgrade()
 	{
-		base.DynamicVars.Damage.UpgradeValueBy(2m);
+		base.DynamicVars.Damage.UpgradeValueBy(3m);
 		base.DynamicVars.Vulnerable.UpgradeValueBy(1m);
+		base.DynamicVars.Weak.UpgradeValueBy(1m);
 	}
 }

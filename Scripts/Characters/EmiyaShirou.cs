@@ -26,9 +26,9 @@ public class EmiyaShirouCharacter :
 
     /// <summary>
     /// 能量图标轮廓颜色
-    /// #860000
+    /// #AD3318
     /// </summary>
-    public override Color EnergyLabelOutlineColor => new Color("860000");
+    public override Color EnergyLabelOutlineColor => new Color("AD3318");
 
     /// <summary>
     /// 地图绘制颜色

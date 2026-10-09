@@ -60,7 +60,6 @@ public class ProjectionMagecraft : ModCardTemplate
             EmiyaCardUtils.ApplyCopiedCardDamageAndBlockReduction(
                 card, DynamicVars["ProjectionDefect"].IntValue);
             CardCmd.ApplyKeyword(card, EmiyaKeywords.Projection);
-            card.Tags.AddItem(EmiyaTags.Projection);
             card.EnergyCost.AddThisCombat(-1);
             await CardPileCmd.AddGeneratedCardToCombat(card, PileType.Hand, base.Owner);
         }

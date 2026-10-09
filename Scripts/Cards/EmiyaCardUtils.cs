@@ -1,10 +1,31 @@
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
+using MegaCrit.Sts2.Core.Entities.Cards;
+using MegaCrit.Sts2.Core.Entities.Players;
+using MegaCrit.Sts2.Core.Models.CardPools;
 
 namespace Sts2EmiyaMod.Scripts;
 
 public static class EmiyaCardUtils
 {
+    public static IEnumerable<CardModel> GetRandomProjectionPool(Player player) =>
+        player.UnlockState.CharacterCardPools
+            .Append(ModelDb.CardPool<ColorlessCardPool>())
+            .Distinct()
+            .SelectMany(pool => pool.GetUnlockedCards(player.UnlockState,
+                player.RunState.CardMultiplayerConstraint))
+            .Where(card => !card.Tags.Contains(CardTag.OstyAttack) && !card.HasStarCostX)
+            .DistinctBy(card => card.Id);
+
+    public static void ConvertStarsToEnergy(CardModel card)
+    {
+        if (card.CanonicalStarCost > 0)
+        {
+            card.SetStarCostThisCombat(0);
+            card.EnergyCost.AddThisCombat(card.CanonicalStarCost / 2);
+        }
+    }
+
     /// <summary>
     /// 
     /// </summary>

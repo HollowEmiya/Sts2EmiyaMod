@@ -1,4 +1,5 @@
 using System.Reflection;
+using HarmonyLib;
 using MegaCrit.Sts2.Core.Logging;
 using MegaCrit.Sts2.Core.Modding;
 using MegaCrit.Sts2.Core.Models.Cards;
@@ -26,6 +27,10 @@ public class Entry
         // 自动注册内容
         ModTypeDiscoveryHub.
             RegisterModAssembly(ModId, assembly);
+
+        var techniqueHistoryHarmony = new Harmony(ModId + ".TechniqueHistory");
+        techniqueHistoryHarmony.CreateClassProcessor(typeof(ReinforcementHistoryPatch)).Patch();
+        techniqueHistoryHarmony.CreateClassProcessor(typeof(ProjectionHistoryPatch)).Patch();
         
         RitsuLibFramework.
             RegisterArchaicToothTranscendenceMapping<Kyudo, Hrunting>();

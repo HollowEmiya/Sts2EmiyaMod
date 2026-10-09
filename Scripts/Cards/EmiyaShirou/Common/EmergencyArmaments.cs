@@ -49,12 +49,7 @@ public class EmergencyArmaments : EmiyaCardNode
     {
         await CreatureCmd.GainBlock(base.Owner.Creature, base.DynamicVars.Block, cardPlay);
 
-        // 角色List
-        List<CardPoolModel> list = base.Owner.UnlockState.CharacterCardPools.ToList();
-		// 所有卡
-        IEnumerable<CardModel> cards = from c in list.SelectMany((CardPoolModel c) => c.GetUnlockedCards(base.Owner.UnlockState, base.Owner.RunState.CardMultiplayerConstraint))
-            where !c.Tags.Contains(CardTag.OstyAttack) && !c.HasStarCostX
-            select c;
+        IEnumerable<CardModel> cards = EmiyaCardUtils.GetRandomProjectionPool(Owner);
         CardModel? card = CardFactory.GetDistinctForCombat(base.Owner, cards, 1,
             base.Owner.RunState.Rng.CombatCardGeneration).FirstOrDefault();
         
@@ -64,15 +59,10 @@ public class EmergencyArmaments : EmiyaCardNode
             {
                 CardCmd.Upgrade(card);
             }
-            if(card.CanonicalStarCost > 0)
-            {
-                card.SetStarCostThisCombat(0);
-                card.EnergyCost.AddThisCombat(card.CanonicalStarCost / 2);
-            }
+            EmiyaCardUtils.ConvertStarsToEnergy(card);
             EmiyaCardUtils.ApplyCopiedCardDamageAndBlockReduction(
                 card, DynamicVars["ProjectionDefect"].IntValue);
             CardCmd.ApplyKeyword(card, EmiyaKeywords.Projection);
-            card.Tags.AddItem(EmiyaTags.Projection);
             card.EnergyCost.AddThisCombat(-1);
             await CardPileCmd.AddGeneratedCardToCombat(card, PileType.Hand, base.Owner);
         }

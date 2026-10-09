@@ -70,7 +70,6 @@ public class Projection : EmiyaCardNode
                         card, DynamicVars["ProjectionDefect"].IntValue);
                 CardCmd.ApplyKeyword(card, EmiyaKeywords.Projection);
                 CardCmd.ApplyKeyword(card, CardKeyword.Exhaust);
-                card.Tags.AddItem(EmiyaTags.Projection);
                 card.EnergyCost.AddThisCombat(-1);
                 await CardPileCmd.AddGeneratedCardToCombat(card, PileType.Hand, base.Owner);
             }

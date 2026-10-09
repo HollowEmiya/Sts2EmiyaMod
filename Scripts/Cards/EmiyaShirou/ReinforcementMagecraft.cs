@@ -4,7 +4,6 @@ using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
-using MegaCrit.Sts2.Core.ValueProps;
 using Sts2EmiyaMod.Scripts;
 using STS2RitsuLib.Interop.AutoRegistration;
 
@@ -42,6 +41,7 @@ public class ReinforcementMagecraft : EmiyaCardNode
     }
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
 	{
+        await CreatureCmd.TriggerAnim(base.Owner.Creature, "Cast", base.Owner.Character.CastAnimDelay);
 		await CardPileCmd.Draw(choiceContext, base.DynamicVars.Cards.BaseValue, base.Owner);
 		
         CardModel? cardModel = (await CardSelectCmd.FromHand(

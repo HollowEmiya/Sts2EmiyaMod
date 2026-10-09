@@ -52,6 +52,8 @@
     "STS2_EMIYA_MOD_CARD_REINFORCEMENT_MAGECRAFT.title": "强化魔术",
     "STS2_EMIYA_MOD_CARD_REINFORCEMENT_MAGECRAFT.description": "抽{Cards:diff()}张牌。\n选择手中一张牌进行[gold]强化[/gold]",
     "STS2_EMIYA_MOD_CARD_REINFORCEMENT_MAGECRAFT.selectionScreenPrompt": "选择一张牌进行[gold]强化[/gold]",
+    "STS2_EMIYA_MOD_CARD_EMERGENCY_ARMAMENTS.title": "紧急武装",
+    "STS2_EMIYA_MOD_CARD_EMERGENCY_ARMAMENTS.description": "获得{Block:diff()}点[gold]格挡[/gold]。\n[color=#00D0FF]投影-{ProjectionDefect:diff()}[/color]一张随机牌。",
     
     "STS2_EMIYA_MOD_CARD_HRUNTING.title": "赤原猎犬",
     "STS2_EMIYA_MOD_CARD_HRUNTING.description": "造成{Damage:diff()}点伤害，\n给予{VulnerablePower:diff()}层[gold]易伤[/gold]。",

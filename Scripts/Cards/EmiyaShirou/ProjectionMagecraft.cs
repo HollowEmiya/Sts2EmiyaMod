@@ -45,6 +45,7 @@ public class ProjectionMagecraft : ModCardTemplate
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
+        await CreatureCmd.TriggerAnim(base.Owner.Creature, "Cast", base.Owner.Character.CastAnimDelay);
         await CreatureCmd.GainBlock(base.Owner.Creature, base.DynamicVars.Block, cardPlay);
         CardModel? selection = (await CardSelectCmd.FromHand(prefs: new CardSelectorPrefs(base.SelectionScreenPrompt, 1), context: choiceContext, player: base.Owner, filter: delegate(CardModel c)
 		{

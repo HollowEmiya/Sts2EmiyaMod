@@ -11,11 +11,11 @@ using STS2RitsuLib.Interop.AutoRegistration;
 namespace Sts2EmiyaMod.Scripts;
 
 /// <summary>
-/// 构成补强：1费，*技能*，获得8点格挡，选择手中一张牌进行强化。  
-/// 升级获得11点格挡。
+/// 跳高：1费，*技能*，获得8点格挡，将这张牌放到抽牌堆顶。  
+/// 升级11点格挡
 /// </summary>
 [RegisterCard(typeof(EmiyaShirouCardPool))]
-public class ConstitutionReinforcement : EmiyaCardNode
+public class HighJump : EmiyaCardNode
 {
     public override bool GainsBlock => true;
     
@@ -37,31 +37,27 @@ public class ConstitutionReinforcement : EmiyaCardNode
         new BlockVar(8, ValueProp.Move)
     ];
 
-    protected override IEnumerable<IHoverTip> AdditionalHoverTips =>
-        HoverTipFactory.FromEnchantment<Reinforcement>(2);
-
-    public ConstitutionReinforcement() :
+    public HighJump() :
         base(energyCost, type, rarity, targetType, shouldShowInCardLibrary)
     {
+        
     }
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
 	{
         await CreatureCmd.GainBlock(base.Owner.Creature, base.DynamicVars.Block, cardPlay);
-
-        CardModel? cardModel = 
-            (await CardSelectCmd.FromHand(
-                prefs: new CardSelectorPrefs(SelectionScreenPrompt, 1),
-                context: choiceContext, player: Owner,
-                filter: card => card.Enchantment == null
-                    && (card.Type == CardType.Skill || card.Type == CardType.Attack) &&
-                    Reinforcement.CardCanEnchant(card),
-                source: this)).FirstOrDefault();
-        if (cardModel != null)
-		{
-            CardCmd.Enchant<Reinforcement>(cardModel, 2);
-		}
     }
+
+    protected override CardLocation GetResultLocationForCardPlay()
+	{
+		CardLocation resultLocationForCardPlay = base.GetResultLocationForCardPlay();
+		if (resultLocationForCardPlay.pileType == PileType.Discard)
+		{
+			resultLocationForCardPlay.pileType = PileType.Draw;
+			resultLocationForCardPlay.position = CardPilePosition.Top;
+		}
+		return resultLocationForCardPlay;
+	}
 
     protected override void OnUpgrade()
 	{

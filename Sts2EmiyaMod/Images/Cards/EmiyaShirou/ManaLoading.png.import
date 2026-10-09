@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dk3ejrktfj5g4"
-path="res://.godot/imported/Trace.png-c7ad698e6de3a1a64b01328a661ebe40.ctex"
+uid="uid://q3w6tkywyhwb"
+path="res://.godot/imported/ManaLoading.png-12517e16711d192c9080ff100420bf03.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sts2EmiyaMod/Images/Cards/EmiyaShirou/Trace.png"
-dest_files=["res://.godot/imported/Trace.png-c7ad698e6de3a1a64b01328a661ebe40.ctex"]
+source_file="res://Sts2EmiyaMod/Images/Cards/EmiyaShirou/ManaLoading.png"
+dest_files=["res://.godot/imported/ManaLoading.png-12517e16711d192c9080ff100420bf03.ctex"]
 
 [params]
 

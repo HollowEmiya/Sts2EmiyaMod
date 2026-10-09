@@ -1,3 +1,4 @@
+using MegaCrit.Sts2.Core.CardSelection;
 using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Combat.History.Entries;
 using MegaCrit.Sts2.Core.Commands;
@@ -64,8 +65,12 @@ public class BattleArmaments : EmiyaCardNode
 		// 	}
 		// 	return;
 		// }
-		CardModel cardModel = await EmiyaCardSelectCmd.FromHandForUpgradeAndEnchant(
-            choiceContext, base.Owner, this);
+		CardModel? cardModel = (await CardSelectCmd.FromHand(
+            prefs: new CardSelectorPrefs(SelectionScreenPrompt, 1),
+            context: choiceContext, player: Owner,
+            filter: card => card.Enchantment == null
+                && card.IsUpgradable && Reinforcement.CardCanEnchant(card),
+            source: this)).FirstOrDefault();
 		if (cardModel != null)
 		{
 			CardCmd.Upgrade(cardModel);

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://drxtc20aidp1o"
-path="res://.godot/imported/ManaLoading.png.png-2ee18245b4eab344e98359e5aed04158.ctex"
+uid="uid://n08hutcvhxyd"
+path="res://.godot/imported/FireCoverage.png-9503ae57ab3e0129f0f5d2ebc7d455da.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sts2EmiyaMod/Images/Cards/EmiyaShirou/ManaLoading.png.png"
-dest_files=["res://.godot/imported/ManaLoading.png.png-2ee18245b4eab344e98359e5aed04158.ctex"]
+source_file="res://Sts2EmiyaMod/Images/Cards/EmiyaShirou/FireCoverage.png"
+dest_files=["res://.godot/imported/FireCoverage.png-9503ae57ab3e0129f0f5d2ebc7d455da.ctex"]
 
 [params]
 

@@ -1,6 +1,6 @@
 {
     "STS2_EMIYA_MOD_ENCHANTMENT_REINFORCEMENT.title": "强化",
-    "STS2_EMIYA_MOD_ENCHANTMENT_REINFORCEMENT.description": "这张牌造成的[gold]伤害[/gold]和获得的[gold]格挡[/gold]额外增加[blue]{Amount}[/blue]点。",
+    "STS2_EMIYA_MOD_ENCHANTMENT_REINFORCEMENT.description": "这张牌造成的[gold]伤害[/gold]和获得的[gold]格挡[/gold]额外增加[blue]{Amount}[/blue]点。\n如果原本获得能量或抽牌会额外获得1点能量和抽牌。\n且强化只对极少部分能力牌有效。",
     "STS2_EMIYA_MOD_ENCHANTMENT_REINFORCEMENT.extraCardText": "[gold]强化[/gold]：伤害和[gold]格挡[/gold]额外增加[blue]{Amount}[/blue]点。",
     "STS2_EMIYA_MOD_ENCHANTMENT_REINFORCEMENT.generalDescription": "这张牌造成的[gold]伤害[/gold]和获得的[gold]格挡[/gold]额外增加，增加量等于强化数值。"
 }

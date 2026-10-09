@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dlv1xapy41plm"
-path="res://.godot/imported/TraceMagecraft.png-a3f61a60d98df6c0652d5e1474ba464d.ctex"
+uid="uid://1s6uadqu527o"
+path="res://.godot/imported/Hawkeye.png-69aee2236af2fa011d5bc8f2d50eb048.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sts2EmiyaMod/Images/Cards/EmiyaShirou/TraceMagecraft.png"
-dest_files=["res://.godot/imported/TraceMagecraft.png-a3f61a60d98df6c0652d5e1474ba464d.ctex"]
+source_file="res://Sts2EmiyaMod/Images/Cards/EmiyaShirou/Hawkeye.png"
+dest_files=["res://.godot/imported/Hawkeye.png-69aee2236af2fa011d5bc8f2d50eb048.ctex"]
 
 [params]
 

@@ -1,28 +1,25 @@
-using MegaCrit.Sts2.Core.CardSelection;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
-using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.ValueProps;
+using Sts2EmiyaMod.Scripts;
 using STS2RitsuLib.Interop.AutoRegistration;
 
-namespace Sts2EmiyaMod.Scripts;
-
 /// <summary>
-/// 构成补强：1费，*技能*，获得8点格挡，选择手中一张牌进行强化。  
-/// 升级获得11点格挡。
+/// 剑之壁垒：2费，技能，获得12点格挡，手中每有一张牌获得2点格挡。  
+/// 升级获得14点格挡，每有一张获得3点格挡。
 /// </summary>
 [RegisterCard(typeof(EmiyaShirouCardPool))]
-public class ConstitutionReinforcement : EmiyaCardNode
+public class SwordBarricade : EmiyaCardNode
 {
     public override bool GainsBlock => true;
     
     /// <summary>
     /// 基础耗能    
     /// </summary>;
-    public const int energyCost = 1;
+    public const int energyCost = 2;
 
     private const CardType type = CardType.Skill;
 
@@ -34,37 +31,31 @@ public class ConstitutionReinforcement : EmiyaCardNode
     private const bool shouldShowInCardLibrary = true;
 
     protected override IEnumerable<DynamicVar> CanonicalVars => [
-        new BlockVar(8, ValueProp.Move)
+        new BlockVar(12, ValueProp.Move),
+        new BlockVar("CardBlock", 2, ValueProp.Move),
     ];
 
-    protected override IEnumerable<IHoverTip> AdditionalHoverTips =>
-        HoverTipFactory.FromEnchantment<Reinforcement>(2);
-
-    public ConstitutionReinforcement() :
+    public SwordBarricade() :
         base(energyCost, type, rarity, targetType, shouldShowInCardLibrary)
     {
+        
     }
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
 	{
         await CreatureCmd.GainBlock(base.Owner.Creature, base.DynamicVars.Block, cardPlay);
-
-        CardModel? cardModel = 
-            (await CardSelectCmd.FromHand(
-                prefs: new CardSelectorPrefs(SelectionScreenPrompt, 1),
-                context: choiceContext, player: Owner,
-                filter: card => card.Enchantment == null
-                    && (card.Type == CardType.Skill || card.Type == CardType.Attack) &&
-                    Reinforcement.CardCanEnchant(card),
-                source: this)).FirstOrDefault();
-        if (cardModel != null)
-		{
-            CardCmd.Enchant<Reinforcement>(cardModel, 2);
-		}
+        foreach (CardModel item in
+            PileType.Hand.GetPile(base.Owner).Cards.ToList())
+        {
+			await CreatureCmd.GainBlock(
+                base.Owner.Creature, (BlockVar)base.DynamicVars["CardBlock"], cardPlay);
+        }
     }
 
+    
     protected override void OnUpgrade()
 	{
-		base.DynamicVars.Block.UpgradeValueBy(3m);
+		base.DynamicVars.Block.UpgradeValueBy(2m);
+		base.DynamicVars["CardBlock"].UpgradeValueBy(1m);
 	}
 }

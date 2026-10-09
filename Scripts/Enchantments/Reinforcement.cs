@@ -25,10 +25,20 @@ public class Reinforcement : ModEnchantmentTemplate
         IconPath: $"res://Sts2EmiyaMod/Images/Enchantments/{GetType().Name}.png"
     );
 
+    public static bool CardCanEnchant(CardModel card)
+    {
+        return (card.Type == CardType.Attack || 
+            card.Type == CardType.Skill || card.Type == CardType.Power) &&
+            (card.DynamicVars.ContainsKey("Block") ||
+                card.DynamicVars.ContainsKey("Damage") ||
+                card.DynamicVars.ContainsKey("Energy") ||
+                card.DynamicVars.ContainsKey("Cards"));
+    }
+
     public override bool CanEnchantCardType(CardType cardType)
 	{
-		return cardType == CardType.Attack || 
-        cardType == CardType.Skill;
+		return (cardType == CardType.Attack || 
+            cardType == CardType.Skill || cardType == CardType.Power);
 	}
 
     public override decimal EnchantDamageAdditive(decimal originalDamage,
@@ -46,5 +56,53 @@ public class Reinforcement : ModEnchantmentTemplate
     {
         // 获得格挡额外增加Amount数量。这个数量是你给予附魔时指定的。
         return Amount;
+    }
+
+	// public override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay? cardPlay)
+    // {
+        
+    // }
+
+    protected override void OnEnchant()
+    {
+        CardModel card = base.Card;
+        if(card.Type == CardType.Attack)
+        {
+            return;
+        }
+        else if(card.Type == CardType.Skill)
+        {
+            if(card.GainsBlock)
+            {
+                return;
+            }
+            if(card.DynamicVars.ContainsKey("Energy"))
+            {
+                card.DynamicVars.Energy.BaseValue += 1m;
+            }
+            if(card.DynamicVars.ContainsKey("Cards"))
+            {
+                card.DynamicVars.Cards.BaseValue += 1m;
+            }
+        }
+        else if(card.Type == CardType.Power)
+        {
+            if(card.DynamicVars.ContainsKey("Block"))
+            {
+                card.DynamicVars.Energy.BaseValue += 1m;
+            }
+            if(card.DynamicVars.ContainsKey("Damage"))
+            {
+                card.DynamicVars.Energy.BaseValue += 1m;
+            }
+            if(card.DynamicVars.ContainsKey("Energy"))
+            {
+                card.DynamicVars.Energy.BaseValue += 1m;
+            }
+            if(card.DynamicVars.ContainsKey("Cards"))
+            {
+                card.DynamicVars.Cards.BaseValue += 1m;
+            }
+        }
     }
 }

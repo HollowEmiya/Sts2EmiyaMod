@@ -6,13 +6,13 @@ using STS2RitsuLib.Interop.AutoRegistration;
 
 namespace Sts2EmiyaMod.Scripts;
 
-[RegisterOwnedCardTag(nameof(Trace))]
+[RegisterOwnedCardTag(nameof(Projection))]
 // [RegisterOwnedCardTag(nameof(Heavy2))] // 添加更多就新加这个特性
 public class EmiyaTags
 {
-    public static readonly CardTag Trace =
+    public static readonly CardTag Projection =
         ModContentRegistry.GetQualifiedCardTagId(
-            Entry.ModId, nameof(Trace)).GetModCardTag();
+            Entry.ModId, nameof(Projection)).GetModCardTag();
 
     // public static readonly CardTag Heavy2 = ModContentRegistry.GetQualifiedCardTagId(Entry.ModId, nameof(Heavy2)).GetModCardTag();
 }

@@ -18,7 +18,7 @@ namespace Sts2EmiyaMod.Scripts;
 [RegisterCard(typeof(EmiyaShirouCardPool))]
 // 注册成人物起始卡，后面是数量。不需要删除即可。
 [RegisterCharacterStarterCard(typeof(EmiyaShirouCharacter), 1)]
-public class Trace : EmiyaCardNode
+public class Projection : EmiyaCardNode
 {
     public override bool GainsBlock => true;
     
@@ -38,14 +38,14 @@ public class Trace : EmiyaCardNode
 
     protected override IEnumerable<DynamicVar> CanonicalVars => [
         new BlockVar(5, ValueProp.Move),
-        new IntVar("TraceDefect", 2m)
+        new IntVar("ProjectionDefect", 2m)
     ];
 
     protected override IEnumerable<IHoverTip> AdditionalHoverTips => [
-        HoverTipFactory.FromKeyword(EmiyaKeywords.Trace)
+        HoverTipFactory.FromKeyword(EmiyaKeywords.Projection)
     ];
 
-    public Trace() :
+    public Projection() :
         base(energyCost, type, rarity, targetType, shouldShowInCardLibrary)
     {
         
@@ -54,7 +54,7 @@ public class Trace : EmiyaCardNode
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
 	{
 		await CreatureCmd.GainBlock(base.Owner.Creature, base.DynamicVars.Block, cardPlay);
-        CardModel cardModel = (await CardSelectCmd.
+        CardModel? cardModel = (await CardSelectCmd.
             FromHandForDiscard(choiceContext, base.Owner,
             new CardSelectorPrefs(
                 CardSelectorPrefs.DiscardSelectionPrompt, 1), null, this)).FirstOrDefault();
@@ -67,10 +67,10 @@ public class Trace : EmiyaCardNode
                 CardModel card = cardModel.CreateClone();
                 EmiyaCardUtils.
                     ApplyCopiedCardDamageAndBlockReduction(
-                        card, DynamicVars["TraceDefect"].IntValue);
-                CardCmd.ApplyKeyword(card, EmiyaKeywords.Trace);
+                        card, DynamicVars["ProjectionDefect"].IntValue);
+                CardCmd.ApplyKeyword(card, EmiyaKeywords.Projection);
                 CardCmd.ApplyKeyword(card, CardKeyword.Exhaust);
-                card.Tags.AddItem(EmiyaTags.Trace);
+                card.Tags.AddItem(EmiyaTags.Projection);
                 card.EnergyCost.AddThisCombat(-1);
                 await CardPileCmd.AddGeneratedCardToCombat(card, PileType.Hand, base.Owner);
             }

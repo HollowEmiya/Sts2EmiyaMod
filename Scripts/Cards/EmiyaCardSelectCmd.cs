@@ -45,7 +45,8 @@ public static class EmiyaCardSelectCmd
         Log.Info($"Player {player.NetId} chose cards [{value}]");
     }
 
-    public static async Task<CardModel?> FromHandForUpgradeAndEnchant(PlayerChoiceContext context, Player player, AbstractModel source)
+    public static async Task<CardModel?> FromHandForUpgradeAndEnchant(
+        PlayerChoiceContext context, Player player, AbstractModel source)
     {
         if (CombatManager.Instance.IsOverOrEnding)
         {
@@ -68,7 +69,7 @@ public static class EmiyaCardSelectCmd
         List<CardModel> list = 
             PileType.Hand.GetPile(player).Cards.
                 Where((CardModel c) => c.IsUpgradable && c.Enchantment == null).ToList();
-        CardModel result;
+        CardModel? result;
         if (list.Count <= 1)
         {
             result = list.FirstOrDefault();

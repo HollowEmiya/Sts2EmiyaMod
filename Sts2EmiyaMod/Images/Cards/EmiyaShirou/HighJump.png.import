@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://hdrwtke2sc7n"
-path="res://.godot/imported/Reinforcement.png-a90fe0b2c12fb95b2bb68d89b853257b.ctex"
+uid="uid://v5ng0f6pa6d4"
+path="res://.godot/imported/HighJump.png-74ab32235c9abcfae34716f1e54ac61c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sts2EmiyaMod/Images/Cards/Backup/Reinforcement.png"
-dest_files=["res://.godot/imported/Reinforcement.png-a90fe0b2c12fb95b2bb68d89b853257b.ctex"]
+source_file="res://Sts2EmiyaMod/Images/Cards/EmiyaShirou/HighJump.png"
+dest_files=["res://.godot/imported/HighJump.png-74ab32235c9abcfae34716f1e54ac61c.ctex"]
 
 [params]
 

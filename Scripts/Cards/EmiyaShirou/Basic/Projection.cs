@@ -38,7 +38,8 @@ public class Projection : EmiyaCardNode
 
     protected override IEnumerable<DynamicVar> CanonicalVars => [
         new BlockVar(5, ValueProp.Move),
-        new IntVar("ProjectionDefect", 2m)
+        new DynamicVar("ProjectionDefect", 0.25m),
+        new IntVar("ProjectionDefectPercentage", 25m),
     ];
 
     protected override IEnumerable<IHoverTip> AdditionalHoverTips => [
@@ -66,8 +67,8 @@ public class Projection : EmiyaCardNode
             {
                 CardModel card = cardModel.CreateClone();
                 EmiyaCardUtils.
-                    ApplyCopiedCardDamageAndBlockReduction(
-                        card, DynamicVars["ProjectionDefect"].IntValue);
+                    ApplyCopiedCardDamageAndBlockPercentage(
+                        card, DynamicVars["ProjectionDefect"].BaseValue);
                 CardCmd.ApplyKeyword(card, EmiyaKeywords.Projection);
                 CardCmd.ApplyKeyword(card, CardKeyword.Exhaust);
                 card.EnergyCost.AddThisCombat(-1);

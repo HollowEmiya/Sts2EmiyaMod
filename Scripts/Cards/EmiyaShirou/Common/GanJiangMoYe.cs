@@ -16,6 +16,12 @@ public class GanjiangMoye : EmiyaCardNode
 {
     public const int energyCost = 1;
 
+    protected override HashSet<CardTag> CanonicalTags =>
+            new HashSet<CardTag> {
+                CardTag.Strike,
+                EmiyaTags.GanJiangMoYe
+            };
+
     protected override IEnumerable<DynamicVar> CanonicalVars => [
         new DamageVar(5, ValueProp.Move),
         new CardsVar(1)

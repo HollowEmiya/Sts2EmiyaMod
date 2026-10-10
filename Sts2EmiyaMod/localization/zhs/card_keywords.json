@@ -1,4 +1,4 @@
 {
-    "STS2_EMIYA_MOD_KEYWORD_PROJECTION.description": "[color=#00D0FF]投影[/color]牌费用降低，但是投影出攻击牌和技能牌其基础数据会减少。\n[color=#00D0FF]投影-n[/color]的[color=#00D0FF]n[/color]表示投影出的复制品基础数据减少数量",
+    "STS2_EMIYA_MOD_KEYWORD_PROJECTION.description": "[color=#00D0FF]投影[/color]牌费用降低，但是投影出攻击牌和技能牌其基础数据会减少。\n[color=#00D0FF]投影-n%[/color]的[color=#00D0FF]n%[/color]表示投影出的复制品基础数据减少比例。\n[color=#00D0FF]投影-n[/color]的[color=#00D0FF]n[/color]表示投影出的复制品基础数据减少数量。",
     "STS2_EMIYA_MOD_KEYWORD_PROJECTION.title": "投影"
 }

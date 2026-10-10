@@ -34,12 +34,25 @@ public static class EmiyaCardUtils
     {
         if (card.DynamicVars.TryGetValue("Damage", out DynamicVar? damageVar))
         {
-            damageVar.BaseValue = Math.Max(0m, damageVar.BaseValue - acount);
+            damageVar.BaseValue = Math.Max(1m, damageVar.BaseValue - acount);
         }
 
         if (card.DynamicVars.TryGetValue("Block", out DynamicVar? blockVar))
         {
-            blockVar.BaseValue = Math.Max(0m, blockVar.BaseValue - acount);
+            blockVar.BaseValue = Math.Max(1m, blockVar.BaseValue - acount);
+        }
+    }
+
+    public static void ApplyCopiedCardDamageAndBlockPercentage(CardModel card, Decimal percentage)
+    {
+        if (card.DynamicVars.TryGetValue("Damage", out DynamicVar? damageVar))
+        {
+            damageVar.BaseValue = Math.Max(1m, damageVar.BaseValue * (1m - percentage));
+        }
+
+        if (card.DynamicVars.TryGetValue("Block", out DynamicVar? blockVar))
+        {
+            blockVar.BaseValue = Math.Max(1m, blockVar.BaseValue * (1m - percentage));
         }
     }
 }

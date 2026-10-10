@@ -36,7 +36,8 @@ public class EmergencyArmaments : EmiyaCardNode
     
     protected override IEnumerable<DynamicVar> CanonicalVars => [
         new BlockVar(5, ValueProp.Move),
-        new IntVar("ProjectionDefect", 2m)
+        new DynamicVar("ProjectionDefect", 0.25m),
+        new IntVar("ProjectionDefectPercentage", 25m),
     ];
 
     public EmergencyArmaments() :
@@ -45,7 +46,7 @@ public class EmergencyArmaments : EmiyaCardNode
         
     }
 
-     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
+    protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
         await CreatureCmd.GainBlock(base.Owner.Creature, base.DynamicVars.Block, cardPlay);
 
@@ -60,15 +61,15 @@ public class EmergencyArmaments : EmiyaCardNode
                 CardCmd.Upgrade(card);
             }
             EmiyaCardUtils.ConvertStarsToEnergy(card);
-            EmiyaCardUtils.ApplyCopiedCardDamageAndBlockReduction(
-                card, DynamicVars["ProjectionDefect"].IntValue);
+            EmiyaCardUtils.ApplyCopiedCardDamageAndBlockPercentage(
+                card, DynamicVars["ProjectionDefect"].BaseValue);
             CardCmd.ApplyKeyword(card, EmiyaKeywords.Projection);
             card.EnergyCost.AddThisCombat(-1);
             await CardPileCmd.AddGeneratedCardToCombat(card, PileType.Hand, base.Owner);
         }
     }
 
-     protected override void OnUpgrade()
+    protected override void OnUpgrade()
 	{
 		base.DynamicVars.Block.UpgradeValueBy(2m);
 	}

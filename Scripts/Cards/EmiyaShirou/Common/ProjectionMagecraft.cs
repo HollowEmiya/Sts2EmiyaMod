@@ -31,7 +31,8 @@ public class ProjectionMagecraft : ModCardTemplate
 
     protected override IEnumerable<DynamicVar> CanonicalVars => [
         new BlockVar(5, ValueProp.Move),
-        new IntVar("ProjectionDefect", 2m)
+        new DynamicVar("ProjectionDefect", 0.25m),
+        new IntVar("ProjectionDefectPercentage", 25m),
     ];
 
     protected override IEnumerable<IHoverTip> AdditionalHoverTips => [
@@ -57,8 +58,8 @@ public class ProjectionMagecraft : ModCardTemplate
         if (selection != null)
         {
             CardModel card = selection.CreateClone();
-            EmiyaCardUtils.ApplyCopiedCardDamageAndBlockReduction(
-                card, DynamicVars["ProjectionDefect"].IntValue);
+            EmiyaCardUtils.ApplyCopiedCardDamageAndBlockPercentage(
+                card, DynamicVars["ProjectionDefect"].BaseValue);
             CardCmd.ApplyKeyword(card, EmiyaKeywords.Projection);
             card.EnergyCost.AddThisCombat(-1);
             await CardPileCmd.AddGeneratedCardToCombat(card, PileType.Hand, base.Owner);

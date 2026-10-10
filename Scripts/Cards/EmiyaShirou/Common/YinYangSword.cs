@@ -45,6 +45,12 @@ public class YinYangSword : EmiyaCardNode
 		new PowerVar<WeakPower>(1m)
     ];
 
+    protected override HashSet<CardTag> CanonicalTags =>
+            new HashSet<CardTag> {
+                CardTag.Strike,
+                EmiyaTags.GanJiangMoYe
+            };
+
     protected override IEnumerable<IHoverTip> AdditionalHoverTips => [
         HoverTipFactory.FromPower<VulnerablePower>(),
         HoverTipFactory.FromPower<WeakPower>(),

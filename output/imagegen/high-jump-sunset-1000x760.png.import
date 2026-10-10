@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://hdrwtke2sc7n"
-path="res://.godot/imported/Reinforcement.png-a90fe0b2c12fb95b2bb68d89b853257b.ctex"
+uid="uid://dywp4cqkulvo6"
+path="res://.godot/imported/high-jump-sunset-1000x760.png-8c4bddbaa92eb962e0818cf3a5b8d3ac.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sts2EmiyaMod/Images/Cards/Backup/Reinforcement.png"
-dest_files=["res://.godot/imported/Reinforcement.png-a90fe0b2c12fb95b2bb68d89b853257b.ctex"]
+source_file="res://output/imagegen/high-jump-sunset-1000x760.png"
+dest_files=["res://.godot/imported/high-jump-sunset-1000x760.png-8c4bddbaa92eb962e0818cf3a5b8d3ac.ctex"]
 
 [params]
 

@@ -18,6 +18,10 @@ public class HitHeadOn : EmiyaCardNode
 {
     public const int energyCost = 1;
 
+    
+    protected override HashSet<CardTag> CanonicalTags =>
+        new HashSet<CardTag> { CardTag.Strike };
+        
     protected override IEnumerable<DynamicVar> CanonicalVars => [
         new DamageVar(9, ValueProp.Move),
         new PowerVar<WeakPower>(2m),

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c6wflfb0i2r1b"
-path="res://.godot/imported/thorns_power.png-08810f6d9acabaa4993dc5885e621f80.ctex"
+uid="uid://cjvvcn6xuwcqv"
+path="res://.godot/imported/ReinforcementCombo.png-21a12478144e4f142d805cbc16ebf70c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sts2EmiyaMod/Images/Cards/Backup/thorns_power.png"
-dest_files=["res://.godot/imported/thorns_power.png-08810f6d9acabaa4993dc5885e621f80.ctex"]
+source_file="res://Sts2EmiyaMod/Images/Cards/EmiyaShirou/ReinforcementCombo.png"
+dest_files=["res://.godot/imported/ReinforcementCombo.png-21a12478144e4f142d805cbc16ebf70c.ctex"]
 
 [params]
 

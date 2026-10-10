@@ -17,6 +17,12 @@ public class DualWielding : EmiyaCardNode
 {
     public const int energyCost = 1;
 
+    protected override HashSet<CardTag> CanonicalTags =>
+            new HashSet<CardTag> {
+                CardTag.Strike,
+                EmiyaTags.GanJiangMoYe
+            };
+
     protected override IEnumerable<DynamicVar> CanonicalVars => [
         new DamageVar(8, ValueProp.Move),
         new IntVar("DamagePerCard", 1m)

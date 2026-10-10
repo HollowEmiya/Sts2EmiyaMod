@@ -18,6 +18,12 @@ public class TripleCraneWings : EmiyaCardNode
 {
     public const int energyCost = 1;
 
+    protected override HashSet<CardTag> CanonicalTags =>
+            new HashSet<CardTag> {
+                CardTag.Strike,
+                EmiyaTags.GanJiangMoYe
+            };
+
     protected override IEnumerable<DynamicVar> CanonicalVars => [
         new DamageVar(3, ValueProp.Move),
         new PowerVar<VulnerablePower>(1m)
